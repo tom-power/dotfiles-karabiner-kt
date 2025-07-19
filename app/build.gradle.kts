@@ -25,6 +25,7 @@ dependencies {
     implementation(libs.kotlin.reflect)
     implementation("karabiner-kt:core:1.1.0")
     implementation("right-shift-vi-like-karabiner-kt:core:0.1")
+    implementation("sixty-percent-karabiner-kt:core:0.1")
 
     testImplementation("org.junit.jupiter:junit-jupiter-params:5.10.2")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.10.2")
