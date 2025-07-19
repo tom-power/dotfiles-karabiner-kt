@@ -1,14 +1,16 @@
 package se.tp21.dotfiles.karabiner.profiles
 
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLike
+import se.tp21.sixtypercent.karabiner.modifications.sixtyPercentShura
 import sh.kau.karabiner.*
 
-fun shura(): Profile {
-    return Profile(
+fun shura(): Profile =
+    Profile(
         name = "shura",
         complexModifications = ComplexModifications(
             rules =
                 rightShiftViLike().rules
+                    + sixtyPercentShura().rules
         ),
         devices = listOf(
             DeviceConfiguration(
@@ -58,4 +60,3 @@ fun shura(): Profile {
             keyboardType = "iso"
         )
     )
-}
