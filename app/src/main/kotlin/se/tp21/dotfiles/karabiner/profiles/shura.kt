@@ -1,6 +1,6 @@
 package se.tp21.dotfiles.karabiner.profiles
 
-import se.tp21.rightshiftvilike.karabiner.rightshiftvilike.rightShiftViLike
+import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLike
 import sh.kau.karabiner.*
 
 fun shura(): Profile {
