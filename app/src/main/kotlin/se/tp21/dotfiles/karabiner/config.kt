@@ -5,6 +5,9 @@ import sh.kau.karabiner.KarabinerConfig
 
 fun karabinerConfig(): KarabinerConfig =
     KarabinerConfig(
-        global = GlobalSettings(checkForUpdatesOnStartup = false),
+        global =
+            GlobalSettings(
+                checkForUpdatesOnStartup = false,
+            ),
         profiles = profiles().values.toList(),
     )

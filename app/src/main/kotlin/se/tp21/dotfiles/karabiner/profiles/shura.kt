@@ -1,8 +1,12 @@
 package se.tp21.dotfiles.karabiner.profiles
 
 import se.tp21.dotfiles.karabiner.profiles.utils.base
+import se.tp21.dotfiles.karabiner.profiles.utils.deviceConfigurationMacbook
+import se.tp21.dotfiles.karabiner.profiles.utils.keyboardIso
+import se.tp21.dotfiles.karabiner.profiles.utils.simpleModificationsGlobal
 import se.tp21.sixtypercent.karabiner.modifications.sixtyPercentShura
 import sh.kau.karabiner.*
+import kotlin.collections.plus
 
 fun shura(): Profile =
     Profile(
@@ -11,50 +15,49 @@ fun shura(): Profile =
             rules = base() + sixtyPercentShura().rules
         ),
         devices = listOf(
-            DeviceConfiguration(
-                identifiers = DeviceIdentifier(
-                    isKeyboard = true,
-                    productId = 835,
-                    vendorId = 1452
+            deviceConfigurationMacbook(),
+            deviceConfigurationShura()
+        ),
+        virtualHidKeyboard = keyboardIso()
+    )
+
+private fun deviceConfigurationShura(): DeviceConfiguration = DeviceConfiguration(
+    identifiers = deviceIdentifierShinobi(),
+    simpleModifications = simpleModificationsGlobal() + simpleModificationsShura(),
+)
+
+private fun deviceIdentifierShinobi(): DeviceIdentifier = DeviceIdentifier(
+    isKeyboard = true,
+    productId = 24647,
+    vendorId = 6127
+)
+
+private fun simpleModificationsShura() =
+    listOf(
+        SimpleModification(
+            from =
+                SimpleModificationKey(
+                    keyCode = ModifierKeyCode.LeftOption,
                 ),
-                ignore = true
-            ),
-            DeviceConfiguration(
-                identifiers = DeviceIdentifier(
-                    isKeyboard = true,
-                    productId = 24647,
-                    vendorId = 6127
-                ),
-                simpleModifications = listOf(
-                    SimpleModification(
-                        from =
-                            SimpleModificationKey(
-                                keyCode = ModifierKeyCode.LeftOption,
-                            ),
-                        to =
-                            listOf(
-                                SimpleModificationValue(
-                                    keyCode = ModifierKeyCode.LeftCommand,
-                                )
-                            )
-                    ),
-                    SimpleModification(
-                        from =
-                            SimpleModificationKey(
-                                keyCode = ModifierKeyCode.LeftCommand,
-                            ),
-                        to =
-                            listOf(
-                                SimpleModificationValue(
-                                    keyCode = ModifierKeyCode.LeftOption,
-                                )
-                            )
+            to =
+                listOf(
+                    SimpleModificationValue(
+                        keyCode = ModifierKeyCode.LeftCommand,
                     )
                 )
-            ),
         ),
-        virtualHidKeyboard = VirtualHidKeyboard(
-            countryCode = 2,
-            keyboardType = "iso"
+        SimpleModification(
+            from =
+                SimpleModificationKey(
+                    keyCode = ModifierKeyCode.LeftCommand,
+                ),
+            to =
+                listOf(
+                    SimpleModificationValue(
+                        keyCode = ModifierKeyCode.LeftOption,
+                    )
+                )
         )
     )
+
+
