@@ -1,11 +1,11 @@
 package se.tp21.dotfiles.karabiner
 
-import se.tp21.dotfiles.karabiner.utils.encode
+import sh.kau.karabiner.json
 import java.io.File
 
 fun main() {
     try {
-        val karabinerJson = karabinerConfig().encode()
+        val karabinerJson = json().encodeToString(karabinerConfig())
 
         File("build/karabiner.json").let {
             it.writeText(karabinerJson)

@@ -23,10 +23,13 @@ dependencies {
     implementation(libs.bundles.pods4k)
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.kotlin.reflect)
-    implementation("karabiner-kt:core:1.1.1")
+    implementation("karabiner-kt:core:1.1.0")
+    implementation("right-shift-vi-like-karabiner-kt:core:0.1")
 
-    testImplementation(libs.bundles.testing)
-    testRuntimeOnly(libs.runtime.junit.platform)
+    testImplementation("org.junit.jupiter:junit-jupiter-params:5.10.2")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.10.2")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.10.2")
+    testImplementation(kotlin("test"))
 }
 
 java {
