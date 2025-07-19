@@ -4,19 +4,19 @@ import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLike
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasNavigation
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasSymbols
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasTerminal
-import se.tp21.sixtypercent.karabiner.modifications.sixtyPercentShura
+import se.tp21.sixtypercent.karabiner.modifications.sixtyPercentK12
 import sh.kau.karabiner.*
 
-fun shura(): Profile =
+fun k12(): Profile =
     Profile(
-        name = "shura",
+        name = "k12",
         complexModifications = ComplexModifications(
             rules =
                 rightShiftViLike().rules
                     + rightShiftViLikeExtrasNavigation().rules
                     + rightShiftViLikeExtrasSymbols().rules
                     + rightShiftViLikeExtrasTerminal().rules
-                    + sixtyPercentShura().rules
+                    + sixtyPercentK12().rules
         ),
         devices = listOf(
             DeviceConfiguration(
