@@ -1,7 +1,7 @@
 package se.tp21.dotfiles.karabiner
 
 import org.junit.jupiter.api.Test
-import se.tp21.dotfiles.karabiner.utils.encode
+import sh.kau.karabiner.json
 import kotlin.test.assertEquals
 
 class DotfilesConfigTest {
@@ -9,7 +9,7 @@ class DotfilesConfigTest {
     fun `karabiner config is correct`() {
         assertEquals(
             expected = karabinerJson.trimAll(),
-            actual = karabinerConfig().encode().trimAll(),
+            actual = json().encodeToString(karabinerConfig()).trimAll(),
         )
     }
 

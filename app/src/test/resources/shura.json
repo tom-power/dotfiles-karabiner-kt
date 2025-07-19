@@ -1367,18 +1367,6 @@
     }
   ],
   "name": "shura",
-  "simple_modifications": [
-    {
-      "from": {
-        "key_code": "caps_lock"
-      },
-      "to": [
-        {
-          "key_code": "left_command"
-        }
-      ]
-    }
-  ],
   "virtual_hid_keyboard": {
     "country_code": 2,
     "keyboard_type_v2": "iso"
