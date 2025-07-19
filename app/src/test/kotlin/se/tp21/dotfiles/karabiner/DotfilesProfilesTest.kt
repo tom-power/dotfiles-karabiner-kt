@@ -15,7 +15,7 @@ class DotfilesProfilesTest {
     @MethodSource("keyToProfile")
     fun `snippets rules are correct`(key: String, profile: Profile) {
         assertEquals(
-            expected = javaClass.getResource("/${key}.json")!!.readText().trimAll(),
+            expected = javaClass.getResource("/profiles/${key}.json")!!.readText().trimAll(),
             actual = json().encodeToString(profile).trimAll(),
         )
     }
