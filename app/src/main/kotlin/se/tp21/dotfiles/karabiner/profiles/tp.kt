@@ -1,12 +1,13 @@
 package se.tp21.dotfiles.karabiner.profiles
 
-import se.tp21.dotfiles.karabiner.profiles.devices.deviceConfigurationShura
-import se.tp21.dotfiles.karabiner.profiles.utils.base
-import se.tp21.dotfiles.karabiner.profiles.utils.keyboardIso
 import se.tp21.dotfiles.karabiner.profiles.devices.deviceConfigurationMacbook
+import se.tp21.dotfiles.karabiner.profiles.devices.deviceConfigurationShura
 import se.tp21.dotfiles.karabiner.profiles.devices.deviceIfRulesShura
+import se.tp21.dotfiles.karabiner.profiles.utils.base
+import se.tp21.dotfiles.karabiner.profiles.utils.keyboardAnsi
 import se.tp21.dotfiles.karabiner.profiles.utils.simpleModificationsGlobal
-import sh.kau.karabiner.*
+import sh.kau.karabiner.ComplexModifications
+import sh.kau.karabiner.Profile
 
 fun tp(): Profile =
     Profile(
@@ -22,5 +23,6 @@ fun tp(): Profile =
             deviceConfigurationMacbook(),
             deviceConfigurationShura()
         ),
-        virtualHidKeyboard = keyboardIso()
+        virtualHidKeyboard = keyboardAnsi(),
+        selected = true
     )

@@ -1545,9 +1545,10 @@
             ]
         }
     ],
+    "selected": true,
     "virtual_hid_keyboard": {
         "country_code": 2,
-        "keyboard_type_v2": "iso"
+        "keyboard_type_v2": "ansi"
     },
     "devices": [
         {
