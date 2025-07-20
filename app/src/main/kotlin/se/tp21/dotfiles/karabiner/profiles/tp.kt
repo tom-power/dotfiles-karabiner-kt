@@ -20,23 +20,24 @@ fun tp(snippetRules: List<KarabinerRule>): Profile =
     Profile(
         name = "tp",
         simpleModifications = simpleModificationsGlobal(),
-        complexModifications = ComplexModifications(
-            rules =
-                baseRules()
-                    + deviceIfRulesShura()
-                    + deviceIfRulesK12()
-                    + deviceIfRulesYoda()
-                    + snippetRules
-
-        ),
-        devices = listOf(
-            deviceConfigurationMacbookPro(),
-            deviceConfigurationMacbookAir(),
-            deviceConfigurationShura(),
-            deviceConfigurationK12(),
-            deviceConfigurationYoda(),
-            deviceConfigurationShinobi()
-        ),
+        complexModifications =
+            ComplexModifications(
+                rules =
+                    baseRules()
+                        + deviceIfRulesShura()
+                        + deviceIfRulesK12()
+                        + deviceIfRulesYoda()
+                        + snippetRules
+            ),
+        devices =
+            listOf(
+                deviceConfigurationMacbookPro(),
+                deviceConfigurationMacbookAir(),
+                deviceConfigurationShura(),
+                deviceConfigurationK12(),
+                deviceConfigurationYoda(),
+                deviceConfigurationShinobi()
+            ),
         virtualHidKeyboard = keyboardAnsi(),
         selected = true
     )
