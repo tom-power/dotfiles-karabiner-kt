@@ -11,6 +11,7 @@ import sh.kau.karabiner.*
 fun k12(): Profile =
     Profile(
         name = "k12",
+        simpleModifications = simpleModificationsGlobal(),
         complexModifications = ComplexModifications(
             rules = base() + sixtyPercent().rules + sixtyPercentK12().rules
         ),

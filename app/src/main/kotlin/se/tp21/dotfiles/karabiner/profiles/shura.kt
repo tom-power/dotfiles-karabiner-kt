@@ -12,6 +12,7 @@ import kotlin.collections.plus
 fun shura(): Profile =
     Profile(
         name = "shura",
+        simpleModifications = simpleModificationsGlobal(),
         complexModifications = ComplexModifications(
             rules = base() + sixtyPercent().rules + sixtyPercentShura().rules
         ),

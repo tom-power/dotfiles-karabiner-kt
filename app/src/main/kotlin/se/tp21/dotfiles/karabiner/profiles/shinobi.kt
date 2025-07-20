@@ -9,6 +9,7 @@ import sh.kau.karabiner.*
 fun shinobi(): Profile =
     Profile(
         name = "shinobi",
+        simpleModifications = simpleModificationsGlobal(),
         complexModifications = ComplexModifications(
             rules = base()
         ),

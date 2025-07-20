@@ -7,7 +7,6 @@ fun deviceConfigurationMacbook() =
     DeviceConfiguration(
         identifiers = deviceIdentifierMacbook(),
         ignore = true,
-        simpleModifications = simpleModificationsGlobal()
     )
 
 private fun deviceIdentifierMacbook(): DeviceIdentifier =
