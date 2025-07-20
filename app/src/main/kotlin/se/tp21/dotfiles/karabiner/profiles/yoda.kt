@@ -3,6 +3,7 @@ package se.tp21.dotfiles.karabiner.profiles
 import se.tp21.dotfiles.karabiner.profiles.utils.base
 import se.tp21.dotfiles.karabiner.profiles.utils.deviceConfigurationMacbook
 import se.tp21.dotfiles.karabiner.profiles.utils.keyboardAnsi
+import se.tp21.dotfiles.karabiner.profiles.utils.simpleModificationsGlobal
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLike
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasNavigation
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasSymbols
@@ -15,6 +16,7 @@ import kotlin.collections.plus
 fun yoda(): Profile =
     Profile(
         name = "yoda",
+        simpleModifications = simpleModificationsGlobal(),
         complexModifications = ComplexModifications(
             rules = base() + sixtyPercent().rules + sixtyPercentYoda().rules
         ),
