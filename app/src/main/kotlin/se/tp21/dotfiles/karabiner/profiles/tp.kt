@@ -6,7 +6,6 @@ import se.tp21.dotfiles.karabiner.profiles.utils.keyboardIso
 import se.tp21.dotfiles.karabiner.profiles.devices.deviceConfigurationMacbook
 import se.tp21.dotfiles.karabiner.profiles.devices.deviceIfRulesShura
 import se.tp21.dotfiles.karabiner.profiles.utils.simpleModificationsGlobal
-import se.tp21.sixtypercent.karabiner.modifications.sixtyPercent
 import sh.kau.karabiner.*
 
 fun tp(): Profile =
@@ -14,7 +13,9 @@ fun tp(): Profile =
         name = "tp",
         simpleModifications = simpleModificationsGlobal(),
         complexModifications = ComplexModifications(
-            rules = base() + sixtyPercent().rules + deviceIfRulesShura()
+            rules =
+                base()
+                    + deviceIfRulesShura()
 
         ),
         devices = listOf(
