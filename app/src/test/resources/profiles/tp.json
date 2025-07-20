@@ -2442,8 +2442,14 @@
                 "vendor_id": 1452,
                 "product_id": 591,
                 "is_keyboard": true
-            },
-            "ignore": true
+            }
+        },
+        {
+            "identifiers": {
+                "vendor_id": 1452,
+                "product_id": 641,
+                "is_keyboard": true
+            }
         },
         {
             "identifiers": {
