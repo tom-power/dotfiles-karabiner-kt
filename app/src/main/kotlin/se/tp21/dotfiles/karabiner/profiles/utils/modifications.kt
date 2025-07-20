@@ -19,17 +19,5 @@ fun simpleModificationsGlobal(): List<SimpleModification> =
                         keyCode = ModifierKeyCode.LeftCommand,
                     )
                 )
-        ),
-        SimpleModification(
-            from =
-                SimpleModificationKey(
-                    keyCode = KeyCode.NonUsBackslash,
-                ),
-            to =
-                listOf(
-                    SimpleModificationValue(
-                        keyCode = KeyCode.GraveAccentAndTilde,
-                    )
-                )
         )
     )

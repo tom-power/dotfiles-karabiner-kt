@@ -1671,16 +1671,6 @@
                             "key_code": "left_command"
                         }
                     ]
-                },
-                {
-                    "from": {
-                        "key_code": "non_us_backslash"
-                    },
-                    "to": [
-                        {
-                            "key_code": "grave_accent_and_tilde"
-                        }
-                    ]
                 }
             ],
             "virtual_hid_keyboard": {
@@ -3927,16 +3917,6 @@
                             "key_code": "left_command"
                         }
                     ]
-                },
-                {
-                    "from": {
-                        "key_code": "non_us_backslash"
-                    },
-                    "to": [
-                        {
-                            "key_code": "grave_accent_and_tilde"
-                        }
-                    ]
                 }
             ],
             "virtual_hid_keyboard": {
@@ -3966,16 +3946,6 @@
                             "to": [
                                 {
                                     "key_code": "left_command"
-                                }
-                            ]
-                        },
-                        {
-                            "from": {
-                                "key_code": "non_us_backslash"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "grave_accent_and_tilde"
                                 }
                             ]
                         }
@@ -5622,16 +5592,6 @@
                     "to": [
                         {
                             "key_code": "left_command"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "non_us_backslash"
-                    },
-                    "to": [
-                        {
-                            "key_code": "grave_accent_and_tilde"
                         }
                     ]
                 }
@@ -7292,16 +7252,6 @@
                             "key_code": "left_command"
                         }
                     ]
-                },
-                {
-                    "from": {
-                        "key_code": "non_us_backslash"
-                    },
-                    "to": [
-                        {
-                            "key_code": "grave_accent_and_tilde"
-                        }
-                    ]
                 }
             ],
             "virtual_hid_keyboard": {
@@ -7331,16 +7281,6 @@
                             "to": [
                                 {
                                     "key_code": "left_command"
-                                }
-                            ]
-                        },
-                        {
-                            "from": {
-                                "key_code": "non_us_backslash"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "grave_accent_and_tilde"
                                 }
                             ]
                         }
@@ -9062,16 +9002,6 @@
                     "to": [
                         {
                             "key_code": "left_command"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "non_us_backslash"
-                    },
-                    "to": [
-                        {
-                            "key_code": "grave_accent_and_tilde"
                         }
                     ]
                 }
@@ -10858,16 +10788,6 @@
                     "to": [
                         {
                             "key_code": "left_command"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "non_us_backslash"
-                    },
-                    "to": [
-                        {
-                            "key_code": "grave_accent_and_tilde"
                         }
                     ]
                 }
