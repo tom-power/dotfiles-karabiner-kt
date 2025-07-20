@@ -1,13 +1,13 @@
 # [karabiner](https://karabiner-elements.pqrs.org/) config using [karabiner-kt](https://github.com/tom-power/karabiner-kt)
 
-Personal [karabiner](https://karabiner-elements.pqrs.org/) config using [karabiner-kt](https://github.com/tom-power/karabiner-kt) config using a fork of [karabiner-kt](https://github.com/kaushikgopal/karabiner-kt), and separate rules ported to use that:
+Personal [karabiner](https://karabiner-elements.pqrs.org/) config built using a [fork](https://github.com/tom-power/karabiner-kt) of [karabiner-kt](https://github.com/kaushikgopal/karabiner-kt), and rules ported separately:
 
 - [right-shift-vi-like-karabiner-kt](https://github.com/tom-power/right-shift-vi-like-karabiner-kt)
 - [sixty-percent-karabiner-kt](https://github.com/tom-power/sixty-percent-karabiner-kt)
 - [larks-karabiner-kt](https://github.com/tom-power/larks-karabiner-kt)
 - [snippets-karabiner-kt](https://github.com/tom-power/snippets-karabiner-kt)
 
-it's been lots of fun, and has helped simplify my config using [device if](https://karabiner-elements.pqrs.org/docs/json/complex-modifications-manipulator-definition/conditions/device/), which I'd never be bothered write in json :)
+it's been lots of fun, and helped simplify my config using [device if](https://karabiner-elements.pqrs.org/docs/json/complex-modifications-manipulator-definition/conditions/device/), which I'd never be bothered to write in json :)
 
 ## installation
 
