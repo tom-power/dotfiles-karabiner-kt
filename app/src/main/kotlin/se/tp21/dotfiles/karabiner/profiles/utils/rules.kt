@@ -19,7 +19,10 @@ fun baseRules(): List<KarabinerRule> =
         + larks())
 
 private fun rightShiftViLikes(): List<KarabinerRule> =
-    (rightShiftViLike().rules
+    (rightShiftViLike().rules.filter {
+        it.description != "Home (right_shift+a to fn+left)"
+            && it.description != "End (right_shift+e to fn+right)"
+    }
         + rightShiftViLikeExtrasEditing().rules
         + rightShiftViLikeExtrasNavigation().rules
         + rightShiftViLikeExtrasSymbols().rules
