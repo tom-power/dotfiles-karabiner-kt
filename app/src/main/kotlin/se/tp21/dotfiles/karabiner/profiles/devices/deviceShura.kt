@@ -1,6 +1,5 @@
 package se.tp21.dotfiles.karabiner.profiles.devices
 
-import se.tp21.dotfiles.karabiner.profiles.utils.withDeviceIfCondition
 import se.tp21.sixtypercent.karabiner.modifications.sixtyPercentShura
 import sh.kau.karabiner.*
 
@@ -10,7 +9,7 @@ fun deviceConfigurationShura(): DeviceConfiguration = DeviceConfiguration(
 )
 
 fun deviceIfRulesShura(): List<KarabinerRule> =
-    sixtyPercentShura().rules.withDeviceIfCondition(deviceIdentifierShura())
+    sixtyPercentShura().rules.withDeviceIfConditionFor(deviceIdentifierShura())
 
 private fun deviceIdentifierShura(): DeviceIdentifier =
     DeviceIdentifier(
