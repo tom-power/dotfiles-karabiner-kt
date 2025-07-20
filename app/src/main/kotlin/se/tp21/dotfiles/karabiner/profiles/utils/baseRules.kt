@@ -15,7 +15,7 @@ import sh.kau.karabiner.KarabinerRule
 
 fun base(): List<KarabinerRule> =
     (rightShiftViLikes()
-        + sixtyPercent().rules
+        + sixtyPercents()
         + larks())
 
 private fun rightShiftViLikes(): List<KarabinerRule> =
@@ -25,8 +25,12 @@ private fun rightShiftViLikes(): List<KarabinerRule> =
         + rightShiftViLikeExtrasSymbols().rules
         + rightShiftViLikeExtrasTerminal().rules)
 
+private fun sixtyPercents(): List<KarabinerRule> =
+    sixtyPercent().rules
+
 private fun larks(): List<KarabinerRule> =
     (larksCommandControl().rules
+        + larksMacToPc().rules.filter { it.description == "\" (right_shift + 2)" }
         + larksNavigation().rules
         + larksNoQuit().rules
         + larksWrap().rules)
