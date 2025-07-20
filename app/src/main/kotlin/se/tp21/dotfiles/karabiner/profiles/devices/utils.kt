@@ -10,13 +10,18 @@ fun List<KarabinerRule>.withDeviceIfConditionFor(identifier: DeviceIdentifier): 
     return this.map { rule ->
         rule.copy(
             manipulators =
-                rule.manipulators?.map { manipulator ->
-                    manipulator.withDeviceIfCondition(deviceIfCondition)
-                }
+                rule.manipulators
+                    ?.map { manipulator ->
+                        manipulator.withDeviceIfCondition(deviceIfCondition)
+                    }
         )
     }
 }
 
-private fun Manipulator.withDeviceIfCondition(deviceIfCondition: Condition.DeviceIfCondition): Manipulator {
-    return this.copy(conditions = this.conditions?.plus(listOf<Condition>(deviceIfCondition)))
-}
+private fun Manipulator.withDeviceIfCondition(deviceIfCondition: Condition.DeviceIfCondition): Manipulator =
+    this.copy(
+        conditions =
+            this.conditions
+                ?.plus(listOf<Condition>(deviceIfCondition))
+                ?: listOf<Condition>(deviceIfCondition)
+    )

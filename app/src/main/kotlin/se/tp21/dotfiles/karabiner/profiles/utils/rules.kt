@@ -13,7 +13,7 @@ import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasEd
 import se.tp21.sixtypercent.karabiner.modifications.sixtyPercent
 import sh.kau.karabiner.KarabinerRule
 
-fun base(): List<KarabinerRule> =
+fun baseRules(): List<KarabinerRule> =
     (rightShiftViLikes()
         + sixtyPercents()
         + larks())
