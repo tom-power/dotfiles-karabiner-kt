@@ -27,7 +27,6 @@ private fun rightShiftViLikes(): List<KarabinerRule> =
 
 private fun larks(): List<KarabinerRule> =
     (larksCommandControl().rules
-        + larksMacToPc().rules
         + larksNavigation().rules
         + larksNoQuit().rules
         + larksWrap().rules)
