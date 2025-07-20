@@ -18,7 +18,8 @@ includeBuild("../karabiner-kt")
 includeBuild("../right-shift-vi-like-karabiner-kt")
 includeBuild("../larks-karabiner-kt")
 includeBuild("../sixty-percent-karabiner-kt")
-sourceControl {
+includeBuild("../snippets-karabiner-kt")
+//sourceControl {
 //    gitRepository(URI("https://github.com/tom-power/karabiner-kt")) {
 //        producesModule("karabiner-kt:core")
 //    }
@@ -31,4 +32,7 @@ sourceControl {
 //    gitRepository(URI("https://github.com/tom-power/sixty-percent-karabiner-kt")) {
 //        producesModule("sixty-percent-karabiner-kt:core")
 //    }
-}
+//    gitRepository(URI("https://github.com/tom-power/snippets-karabiner-kt")) {
+//        producesModule("snippets-karabiner-kt:core")
+//    }
+//}

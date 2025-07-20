@@ -8,7 +8,7 @@ import se.tp21.dotfiles.karabiner.profiles.devices.deviceConfigurationYoda
 import se.tp21.dotfiles.karabiner.profiles.devices.deviceIfRulesK12
 import se.tp21.dotfiles.karabiner.profiles.devices.deviceIfRulesShura
 import se.tp21.dotfiles.karabiner.profiles.devices.deviceIfRulesYoda
-import se.tp21.dotfiles.karabiner.profiles.utils.base
+import se.tp21.dotfiles.karabiner.profiles.utils.baseRules
 import se.tp21.dotfiles.karabiner.profiles.utils.keyboardAnsi
 import se.tp21.dotfiles.karabiner.profiles.utils.simpleModificationsGlobal
 import sh.kau.karabiner.ComplexModifications
@@ -20,7 +20,7 @@ fun tp(): Profile =
         simpleModifications = simpleModificationsGlobal(),
         complexModifications = ComplexModifications(
             rules =
-                base()
+                baseRules()
                     + deviceIfRulesShura()
                     + deviceIfRulesK12()
                     + deviceIfRulesYoda()
