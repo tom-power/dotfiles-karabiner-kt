@@ -2231,6 +2231,25 @@
                     ]
                 }
             ]
+        },
+        {
+            "identifiers": {
+                "vendor_id": 1241,
+                "product_id": 355,
+                "is_keyboard": true
+            },
+            "simple_modifications": [
+                {
+                    "from": {
+                        "key_code": "caps_lock"
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_command"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
