@@ -23,10 +23,10 @@ fun tp(snippetRules: List<KarabinerRule>): Profile =
         complexModifications = ComplexModifications(
             rules =
                 baseRules()
-                    + snippetRules
                     + deviceIfRulesShura()
                     + deviceIfRulesK12()
                     + deviceIfRulesYoda()
+                    + snippetRules
 
         ),
         devices = listOf(
