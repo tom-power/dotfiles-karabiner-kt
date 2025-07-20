@@ -3,16 +3,15 @@ package se.tp21.dotfiles.karabiner.profiles.devices
 import sh.kau.karabiner.DeviceConfiguration
 import sh.kau.karabiner.DeviceIdentifier
 
-fun deviceConfigurationMacbook() =
+fun deviceConfigurationMacbookAir() =
     DeviceConfiguration(
-        identifiers = deviceIdentifierMacbook(),
-        ignore = true,
+        identifiers = deviceIdentifierMacbookAir(),
     )
 
-private fun deviceIdentifierMacbook(): DeviceIdentifier =
+private fun deviceIdentifierMacbookAir(): DeviceIdentifier =
     DeviceIdentifier(
         isKeyboard = true,
-        productId = 591,
+        productId = 641,
         vendorId = 1452
     )
 
