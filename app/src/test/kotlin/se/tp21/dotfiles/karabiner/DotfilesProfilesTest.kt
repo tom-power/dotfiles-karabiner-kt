@@ -27,7 +27,7 @@ class DotfilesProfilesTest {
 
     @Suppress("unused")
     private fun keyToProfile() =
-        profiles().toList().map { (key, profile) -> Arguments.of(key, profile) }
+        profiles(emptyList()).toList().map { (key, profile) -> Arguments.of(key, profile) }
 
 }
 
