@@ -1,5 +1,6 @@
 package se.tp21.dotfiles.karabiner.profiles
 
+import se.tp21.dotfiles.karabiner.profiles.devices.deviceConfigurationK12
 import se.tp21.dotfiles.karabiner.profiles.utils.base
 import se.tp21.dotfiles.karabiner.profiles.utils.keyboardAnsi
 import se.tp21.dotfiles.karabiner.profiles.devices.deviceConfigurationMacbook
@@ -20,17 +21,4 @@ fun k12(): Profile =
             deviceConfigurationK12()
         ),
         virtualHidKeyboard = keyboardAnsi()
-    )
-
-private fun deviceConfigurationK12(): DeviceConfiguration =
-    DeviceConfiguration(
-        identifiers = deviceIdentifierK12(),
-        simpleModifications = simpleModificationsGlobal()
-    )
-
-private fun deviceIdentifierK12(): DeviceIdentifier =
-    DeviceIdentifier(
-        isKeyboard = true,
-        productId = 835,
-        vendorId = 1452
     )
