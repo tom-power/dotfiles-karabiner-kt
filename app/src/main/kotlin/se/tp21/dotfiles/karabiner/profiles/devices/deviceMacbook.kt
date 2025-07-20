@@ -1,4 +1,4 @@
-package se.tp21.dotfiles.karabiner.profiles.utils
+package se.tp21.dotfiles.karabiner.profiles.devices
 
 import sh.kau.karabiner.DeviceConfiguration
 import sh.kau.karabiner.DeviceIdentifier

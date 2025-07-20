@@ -1,13 +1,9 @@
 package se.tp21.dotfiles.karabiner.profiles
 
 import se.tp21.dotfiles.karabiner.profiles.utils.base
-import se.tp21.dotfiles.karabiner.profiles.utils.deviceConfigurationMacbook
+import se.tp21.dotfiles.karabiner.profiles.devices.deviceConfigurationMacbook
 import se.tp21.dotfiles.karabiner.profiles.utils.keyboardAnsi
 import se.tp21.dotfiles.karabiner.profiles.utils.simpleModificationsGlobal
-import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLike
-import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasNavigation
-import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasSymbols
-import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasTerminal
 import se.tp21.sixtypercent.karabiner.modifications.sixtyPercent
 import se.tp21.sixtypercent.karabiner.modifications.sixtyPercentYoda
 import sh.kau.karabiner.*

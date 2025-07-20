@@ -1,0 +1,48 @@
+package se.tp21.dotfiles.karabiner.profiles.devices
+
+import se.tp21.dotfiles.karabiner.profiles.utils.withDeviceIfCondition
+import se.tp21.sixtypercent.karabiner.modifications.sixtyPercentShura
+import sh.kau.karabiner.*
+
+fun deviceConfigurationShura(): DeviceConfiguration = DeviceConfiguration(
+    identifiers = deviceIdentifierShura(),
+    simpleModifications = simpleModificationsShura(),
+)
+
+fun deviceIfRulesShura(): List<KarabinerRule> =
+    sixtyPercentShura().rules.withDeviceIfCondition(deviceIdentifierShura())
+
+private fun deviceIdentifierShura(): DeviceIdentifier =
+    DeviceIdentifier(
+        isKeyboard = true,
+        productId = 24647,
+        vendorId = 6127
+    )
+
+private fun simpleModificationsShura() =
+    listOf(
+        SimpleModification(
+            from =
+                SimpleModificationKey(
+                    keyCode = ModifierKeyCode.LeftOption,
+                ),
+            to =
+                listOf(
+                    SimpleModificationValue(
+                        keyCode = ModifierKeyCode.LeftCommand,
+                    )
+                )
+        ),
+        SimpleModification(
+            from =
+                SimpleModificationKey(
+                    keyCode = ModifierKeyCode.LeftCommand,
+                ),
+            to =
+                listOf(
+                    SimpleModificationValue(
+                        keyCode = ModifierKeyCode.LeftOption,
+                    )
+                )
+        )
+    )
