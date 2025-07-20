@@ -19,10 +19,7 @@ fun baseRules(): List<KarabinerRule> =
         + larks())
 
 private fun rightShiftViLikes(): List<KarabinerRule> =
-    (rightShiftViLike().rules.filter {
-        it.description != "Home (right_shift+a to fn+left)"
-            && it.description != "End (right_shift+e to fn+right)"
-    }
+    (rightShiftViLike().rules.filterNot { it.description in listOf(home, end) }
         + rightShiftViLikeExtrasEditing().rules
         + rightShiftViLikeExtrasNavigation().rules
         + rightShiftViLikeExtrasSymbols().rules
@@ -33,8 +30,11 @@ private fun sixtyPercents(): List<KarabinerRule> =
 
 private fun larks(): List<KarabinerRule> =
     (larksCommandControl().rules
-        + larksMacToPc().rules.filter { it.description == "\" (right_shift + 2)" }
+        + larksMacToPc().rules.filter { it.description == doubleQuote }
         + larksNavigation().rules
         + larksNoQuit().rules
         + larksWrap().rules)
 
+private const val home = "Home (right_shift+a to fn+left)"
+private const val end = "End (right_shift+e to fn+right)"
+private const val doubleQuote = "\" (right_shift + 2)"
