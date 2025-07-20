@@ -4,6 +4,11 @@ import java.io.File
 
 fun String.trimAll() = trimStart().trimEnd().trimIndent()
 
+fun writeActual(dir: String, fileName: String, text: String) {
+    val resourceDir = File(dir).also { it.mkdirs() }
+    File(resourceDir, "${fileName}.actual.json").writeText(text)
+}
+
 fun approveAllIn(dir: File) {
     dir.walkTopDown()
         .filter {

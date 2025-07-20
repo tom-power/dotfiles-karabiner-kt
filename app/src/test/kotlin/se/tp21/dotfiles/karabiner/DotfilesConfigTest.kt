@@ -7,10 +7,14 @@ import kotlin.test.assertEquals
 class DotfilesConfigTest {
     @Test
     fun `karabiner config is correct`() {
-        assertEquals(
-            expected = karabinerJson.trimAll(),
-            actual = json().encodeToString(karabinerConfig()).trimAll(),
-        )
+        val expected = karabinerJson.trimAll()
+        val actual = json().encodeToString(karabinerConfig()).trimAll()
+        runCatching {
+            assertEquals(expected, actual)
+        }.onFailure {
+            writeActual("src/test/resources", "karabiner", actual)
+            throw it
+        }
     }
 
     private val karabinerJson = javaClass.getResource("/karabiner.json")!!.readText()
