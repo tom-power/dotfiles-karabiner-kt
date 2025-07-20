@@ -638,6 +638,51 @@
                 ]
             },
             {
+                "description": "Single quote (right_shift+q to single quote)",
+                "manipulators": [
+                    {
+                        "type": "basic",
+                        "from": {
+                            "key_code": "q",
+                            "modifiers": {
+                                "mandatory": [
+                                    "right_shift"
+                                ]
+                            }
+                        },
+                        "to": [
+                            {
+                                "key_code": "quote"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "description": "Rename (right_shift+r to shift+f6)",
+                "manipulators": [
+                    {
+                        "type": "basic",
+                        "from": {
+                            "key_code": "r",
+                            "modifiers": {
+                                "mandatory": [
+                                    "right_shift"
+                                ]
+                            }
+                        },
+                        "to": [
+                            {
+                                "key_code": "f6",
+                                "modifiers": [
+                                    "left_shift"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
                 "description": "Go back (right_shift+cmd+option+h to cmd+[)",
                 "manipulators": [
                     {
@@ -1536,6 +1581,28 @@
             }
         ]
     },
+    "simple_modifications": [
+        {
+            "from": {
+                "key_code": "caps_lock"
+            },
+            "to": [
+                {
+                    "key_code": "left_command"
+                }
+            ]
+        },
+        {
+            "from": {
+                "key_code": "non_us_backslash"
+            },
+            "to": [
+                {
+                    "key_code": "grave_accent_and_tilde"
+                }
+            ]
+        }
+    ],
     "virtual_hid_keyboard": {
         "country_code": 2,
         "keyboard_type_v2": "ansi"
@@ -1547,29 +1614,7 @@
                 "product_id": 591,
                 "is_keyboard": true
             },
-            "ignore": true,
-            "simple_modifications": [
-                {
-                    "from": {
-                        "key_code": "caps_lock"
-                    },
-                    "to": [
-                        {
-                            "key_code": "left_command"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "non_us_backslash"
-                    },
-                    "to": [
-                        {
-                            "key_code": "grave_accent_and_tilde"
-                        }
-                    ]
-                }
-            ]
+            "ignore": true
         },
         {
             "identifiers": {

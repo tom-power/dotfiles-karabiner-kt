@@ -9,6 +9,7 @@ import se.tp21.karabiner.larks.larksMacToPc
 import se.tp21.karabiner.larks.larksNavigation
 import se.tp21.karabiner.larks.larksNoQuit
 import se.tp21.karabiner.larks.larksWrap
+import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasEditing
 import sh.kau.karabiner.KarabinerRule
 
 fun base(): List<KarabinerRule> =
@@ -17,6 +18,7 @@ fun base(): List<KarabinerRule> =
 
 private fun rightShiftViLikes(): List<KarabinerRule> =
     (rightShiftViLike().rules
+        + rightShiftViLikeExtrasEditing().rules
         + rightShiftViLikeExtrasNavigation().rules
         + rightShiftViLikeExtrasSymbols().rules
         + rightShiftViLikeExtrasTerminal().rules)
