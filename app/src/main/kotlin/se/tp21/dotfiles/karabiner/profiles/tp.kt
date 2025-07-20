@@ -1,7 +1,8 @@
 package se.tp21.dotfiles.karabiner.profiles
 
 import se.tp21.dotfiles.karabiner.profiles.devices.deviceConfigurationK12
-import se.tp21.dotfiles.karabiner.profiles.devices.deviceConfigurationMacbook
+import se.tp21.dotfiles.karabiner.profiles.devices.deviceConfigurationMacbookAir
+import se.tp21.dotfiles.karabiner.profiles.devices.deviceConfigurationMacbookPro
 import se.tp21.dotfiles.karabiner.profiles.devices.deviceConfigurationShinobi
 import se.tp21.dotfiles.karabiner.profiles.devices.deviceConfigurationShura
 import se.tp21.dotfiles.karabiner.profiles.devices.deviceConfigurationYoda
@@ -29,7 +30,8 @@ fun tp(snippetRules: List<KarabinerRule>): Profile =
 
         ),
         devices = listOf(
-            deviceConfigurationMacbook(),
+            deviceConfigurationMacbookPro(),
+            deviceConfigurationMacbookAir(),
             deviceConfigurationShura(),
             deviceConfigurationK12(),
             deviceConfigurationYoda(),
