@@ -28,6 +28,7 @@ dependencies {
     implementation("right-shift-vi-like-karabiner-kt:core:0.2")
     implementation("larks-karabiner-kt:core:0.1")
     implementation("sixty-percent-karabiner-kt:core:0.1")
+    implementation("snippets-karabiner-kt:core:0.1")
 
     testImplementation("org.junit.jupiter:junit-jupiter-params:5.10.2")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.10.2")
@@ -48,7 +49,7 @@ application {
 
 tasks.register<JavaExec>("runMainKt") {
     group = "build"
-    mainClass.set("se.tp21.karabiner.MainKt")
+    mainClass.set("se.tp21.dotfiles.karabiner.MainKt")
     classpath = sourceSets["main"].runtimeClasspath
 }
 

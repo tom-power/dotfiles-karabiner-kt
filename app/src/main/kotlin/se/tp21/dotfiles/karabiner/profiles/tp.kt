@@ -12,15 +12,17 @@ import se.tp21.dotfiles.karabiner.profiles.utils.baseRules
 import se.tp21.dotfiles.karabiner.profiles.utils.keyboardAnsi
 import se.tp21.dotfiles.karabiner.profiles.utils.simpleModificationsGlobal
 import sh.kau.karabiner.ComplexModifications
+import sh.kau.karabiner.KarabinerRule
 import sh.kau.karabiner.Profile
 
-fun tp(): Profile =
+fun tp(snippetRules: List<KarabinerRule>): Profile =
     Profile(
         name = "tp",
         simpleModifications = simpleModificationsGlobal(),
         complexModifications = ComplexModifications(
             rules =
                 baseRules()
+                    + snippetRules
                     + deviceIfRulesShura()
                     + deviceIfRulesK12()
                     + deviceIfRulesYoda()

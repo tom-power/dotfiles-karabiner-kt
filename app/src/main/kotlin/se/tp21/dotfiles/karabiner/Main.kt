@@ -1,11 +1,18 @@
 package se.tp21.dotfiles.karabiner
 
+import se.tp21.karabiner.snippets.SnippetRules
+import se.tp21.karabiner.snippets.complexModificationsFrom
 import sh.kau.karabiner.json
 import java.io.File
 
 fun main() {
     try {
-        val karabinerJson = json().encodeToString(karabinerConfig())
+        val snippetRulesJson = File("src/main/resources/snippetRules.json").inputStream().bufferedReader().use { it.readText() }
+
+        val snippetRules = json().decodeFromString<SnippetRules>(snippetRulesJson)
+        val snippetModifications = complexModificationsFrom(snippetRules)
+
+        val karabinerJson = json().encodeToString(karabinerConfig(snippetModifications.rules))
 
         File("build/karabiner.json").let {
             it.writeText(karabinerJson)

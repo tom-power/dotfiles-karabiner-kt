@@ -2,12 +2,13 @@ package se.tp21.dotfiles.karabiner
 
 import sh.kau.karabiner.GlobalSettings
 import sh.kau.karabiner.KarabinerConfig
+import sh.kau.karabiner.KarabinerRule
 
-fun karabinerConfig(): KarabinerConfig =
+fun karabinerConfig(snippetRules: List<KarabinerRule>): KarabinerConfig =
     KarabinerConfig(
         global =
             GlobalSettings(
                 checkForUpdatesOnStartup = false,
             ),
-        profiles = profiles().values.toList(),
+        profiles = profiles(snippetRules).values.toList(),
     )

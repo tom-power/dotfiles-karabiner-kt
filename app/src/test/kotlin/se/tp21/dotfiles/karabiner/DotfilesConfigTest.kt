@@ -8,7 +8,7 @@ class DotfilesConfigTest {
     @Test
     fun `karabiner config is correct`() {
         val expected = karabinerJson.trimAll()
-        val actual = json().encodeToString(karabinerConfig()).trimAll()
+        val actual = json().encodeToString(karabinerConfig(emptyList())).trimAll()
         runCatching {
             assertEquals(expected, actual)
         }.onFailure {
