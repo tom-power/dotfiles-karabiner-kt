@@ -1,0 +1,9 @@
+{
+  "rules": [
+    {
+      "description": "snippets - ts -> test",
+      "keys": "ts",
+      "replacement": "test"
+    }
+  ]
+}

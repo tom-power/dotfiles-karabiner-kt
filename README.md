@@ -1,6 +1,6 @@
 # [karabiner](https://karabiner-elements.pqrs.org/) config using [karabiner-kt](https://github.com/tom-power/karabiner-kt)
 
-Personal karabiner config using a fork of [karabiner-kt](https://github.com/kaushikgopal/karabiner-kt), and separate rules ported to use that:
+Personal [karabiner](https://karabiner-elements.pqrs.org/) config using [karabiner-kt](https://github.com/tom-power/karabiner-kt) config using a fork of [karabiner-kt](https://github.com/kaushikgopal/karabiner-kt), and separate rules ported to use that:
 
 - [right-shift-vi-like-karabiner-kt](https://github.com/tom-power/right-shift-vi-like-karabiner-kt)
 - [sixty-percent-karabiner-kt](https://github.com/tom-power/sixty-percent-karabiner-kt)
