@@ -2,6 +2,7 @@ package se.tp21.dotfiles.karabiner.profiles
 
 import se.tp21.dotfiles.karabiner.profiles.devices.deviceConfigurationK12
 import se.tp21.dotfiles.karabiner.profiles.devices.deviceConfigurationMacbook
+import se.tp21.dotfiles.karabiner.profiles.devices.deviceConfigurationShinobi
 import se.tp21.dotfiles.karabiner.profiles.devices.deviceConfigurationShura
 import se.tp21.dotfiles.karabiner.profiles.devices.deviceConfigurationYoda
 import se.tp21.dotfiles.karabiner.profiles.devices.deviceIfRulesK12
@@ -29,7 +30,8 @@ fun tp(): Profile =
             deviceConfigurationMacbook(),
             deviceConfigurationShura(),
             deviceConfigurationK12(),
-            deviceConfigurationYoda()
+            deviceConfigurationYoda(),
+            deviceConfigurationShinobi()
         ),
         virtualHidKeyboard = keyboardAnsi(),
         selected = true
