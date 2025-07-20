@@ -7,14 +7,16 @@ import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLike
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasNavigation
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasSymbols
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasTerminal
+import se.tp21.sixtypercent.karabiner.modifications.sixtyPercent
 import se.tp21.sixtypercent.karabiner.modifications.sixtyPercentYoda
 import sh.kau.karabiner.*
+import kotlin.collections.plus
 
 fun yoda(): Profile =
     Profile(
         name = "yoda",
         complexModifications = ComplexModifications(
-            rules = base() + sixtyPercentYoda().rules
+            rules = base() + sixtyPercent().rules + sixtyPercentYoda().rules
         ),
         devices = listOf(deviceConfigurationMacbook()),
         virtualHidKeyboard = keyboardAnsi()

@@ -4,6 +4,7 @@ import se.tp21.dotfiles.karabiner.profiles.utils.base
 import se.tp21.dotfiles.karabiner.profiles.utils.deviceConfigurationMacbook
 import se.tp21.dotfiles.karabiner.profiles.utils.keyboardIso
 import se.tp21.dotfiles.karabiner.profiles.utils.simpleModificationsGlobal
+import se.tp21.sixtypercent.karabiner.modifications.sixtyPercent
 import se.tp21.sixtypercent.karabiner.modifications.sixtyPercentShura
 import sh.kau.karabiner.*
 import kotlin.collections.plus
@@ -12,7 +13,7 @@ fun shura(): Profile =
     Profile(
         name = "shura",
         complexModifications = ComplexModifications(
-            rules = base() + sixtyPercentShura().rules
+            rules = base() + sixtyPercent().rules + sixtyPercentShura().rules
         ),
         devices = listOf(
             deviceConfigurationMacbook(),
