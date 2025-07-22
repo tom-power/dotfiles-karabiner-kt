@@ -2322,8 +2322,8 @@
                                         "type": "device_if",
                                         "identifiers": [
                                             {
-                                                "vendor_id": 1241,
-                                                "product_id": 355,
+                                                "vendor_id": 6127,
+                                                "product_id": 24647,
                                                 "is_keyboard": true
                                             }
                                         ]
@@ -2358,8 +2358,8 @@
                                         "type": "device_if",
                                         "identifiers": [
                                             {
-                                                "vendor_id": 1241,
-                                                "product_id": 355,
+                                                "vendor_id": 6127,
+                                                "product_id": 24647,
                                                 "is_keyboard": true
                                             }
                                         ]
@@ -2472,8 +2472,8 @@
                 },
                 {
                     "identifiers": {
-                        "vendor_id": 1241,
-                        "product_id": 355,
+                        "vendor_id": 6127,
+                        "product_id": 24647,
                         "is_keyboard": true
                     },
                     "simple_modifications": [

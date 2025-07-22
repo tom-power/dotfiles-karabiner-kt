@@ -10,9 +10,4 @@ fun deviceConfigurationShinobi(): DeviceConfiguration =
         simpleModifications = simpleModificationsGlobal()
     )
 
-private fun deviceIdentifierShinobi(): DeviceIdentifier =
-    DeviceIdentifier(
-        isKeyboard = true,
-        productId = 355,
-        vendorId = 1241
-    )
+private fun deviceIdentifierShinobi(): DeviceIdentifier = deviceIdentifierBlueTooth()

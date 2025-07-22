@@ -11,12 +11,7 @@ fun deviceConfigurationShura(): DeviceConfiguration = DeviceConfiguration(
 fun deviceIfRulesShura(): List<KarabinerRule> =
     sixtyPercentShura().rules.withDeviceIfConditionFor(deviceIdentifierShura())
 
-private fun deviceIdentifierShura(): DeviceIdentifier =
-    DeviceIdentifier(
-        isKeyboard = true,
-        productId = 24647,
-        vendorId = 6127
-    )
+private fun deviceIdentifierShura(): DeviceIdentifier = deviceIdentifierThinkPadDock()
 
 private fun simpleModificationsShura() =
     listOf(
