@@ -14,8 +14,8 @@ fun deviceIfRulesYoda(): List<KarabinerRule> =
 private fun deviceIdentifierYoda(): DeviceIdentifier =
     DeviceIdentifier(
         isKeyboard = true,
-        productId = 24647,
-        vendorId = 6127
+        productId = 355,
+        vendorId = 1241
     )
 
 private fun simpleModificationsYoda() =
