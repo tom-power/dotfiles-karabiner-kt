@@ -14,8 +14,8 @@ fun deviceIfRulesK12(): List<KarabinerRule> =
 private fun deviceIdentifierK12(): DeviceIdentifier =
     DeviceIdentifier(
         isKeyboard = true,
-        productId = 24647,
-        vendorId = 6127
+        productId = 355,
+        vendorId = 1241
     )
 
 private fun simpleModificationsK12() =
