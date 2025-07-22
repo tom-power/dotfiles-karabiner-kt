@@ -11,7 +11,7 @@ fun deviceConfigurationMacbookAir() =
 private fun deviceIdentifierMacbookAir(): DeviceIdentifier =
     DeviceIdentifier(
         isKeyboard = true,
+        vendorId = 1452,
         productId = 641,
-        vendorId = 1452
     )
 
