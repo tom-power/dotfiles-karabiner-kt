@@ -5,8 +5,8 @@ import sh.kau.karabiner.DeviceIdentifier
 import sh.kau.karabiner.KarabinerRule
 import sh.kau.karabiner.Manipulator
 
-internal fun List<KarabinerRule>.withDeviceIfConditionFor(identifier: DeviceIdentifier): List<KarabinerRule> {
-    val deviceIfCondition = Condition.DeviceIfCondition(listOf(identifier))
+internal fun List<KarabinerRule>.withDeviceIfConditionFor(identifiers: List<DeviceIdentifier>): List<KarabinerRule> {
+    val deviceIfCondition = Condition.DeviceIfCondition(identifiers)
     return this.map { rule ->
         rule.copy(
             manipulators =

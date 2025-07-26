@@ -8,6 +8,7 @@ import se.tp21.dotfiles.karabiner.profiles.devices.deviceConfigurationShura
 import se.tp21.dotfiles.karabiner.profiles.devices.deviceConfigurationYoda
 import se.tp21.dotfiles.karabiner.profiles.devices.deviceIfRulesK12
 import se.tp21.dotfiles.karabiner.profiles.devices.deviceIfRulesShura
+import se.tp21.dotfiles.karabiner.profiles.devices.deviceIfRulesSixtyPercent
 import se.tp21.dotfiles.karabiner.profiles.devices.deviceIfRulesYoda
 import se.tp21.dotfiles.karabiner.profiles.utils.baseRules
 import se.tp21.dotfiles.karabiner.profiles.utils.keyboardAnsi
@@ -24,6 +25,7 @@ fun tp(snippetRules: List<KarabinerRule>): Profile =
             ComplexModifications(
                 rules =
                     baseRules()
+                        + deviceIfRulesSixtyPercent()
                         + deviceIfRulesShura()
                         + deviceIfRulesK12()
                         + deviceIfRulesYoda()

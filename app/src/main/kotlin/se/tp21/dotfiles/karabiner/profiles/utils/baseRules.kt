@@ -10,12 +10,10 @@ import se.tp21.karabiner.larks.larksNavigation
 import se.tp21.karabiner.larks.larksNoQuit
 import se.tp21.karabiner.larks.larksWrap
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasEditing
-import se.tp21.sixtypercent.karabiner.modifications.sixtyPercent
 import sh.kau.karabiner.KarabinerRule
 
 fun baseRules(): List<KarabinerRule> =
     (rightShiftViLikes()
-        + sixtyPercents()
         + larks())
 
 private fun rightShiftViLikes(): List<KarabinerRule> =
@@ -24,9 +22,6 @@ private fun rightShiftViLikes(): List<KarabinerRule> =
         + rightShiftViLikeExtrasNavigation().rules
         + rightShiftViLikeExtrasSymbols().rules
         + rightShiftViLikeExtrasTerminal().rules)
-
-private fun sixtyPercents(): List<KarabinerRule> =
-    sixtyPercent().rules
 
 private fun larks(): List<KarabinerRule> =
     (larksCommandControl().rules

@@ -9,7 +9,7 @@ fun deviceConfigurationShura(): DeviceConfiguration = DeviceConfiguration(
 )
 
 fun deviceIfRulesShura(): List<KarabinerRule> =
-    sixtyPercentShura().rules.withDeviceIfConditionFor(deviceIdentifierShura())
+    sixtyPercentShura().rules.withDeviceIfConditionFor(listOf(deviceIdentifierShura()))
 
 private fun deviceIdentifierShura(): DeviceIdentifier = deviceIdentifierThinkPadDock()
 

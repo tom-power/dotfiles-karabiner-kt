@@ -979,54 +979,6 @@
                         ]
                     },
                     {
-                        "description": "Down (left_control + left_arrow)",
-                        "manipulators": [
-                            {
-                                "type": "basic",
-                                "from": {
-                                    "key_code": "left_arrow",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ],
-                                        "mandatory": [
-                                            "left_control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "down_arrow"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Up (left_control + right_arrow)",
-                        "manipulators": [
-                            {
-                                "type": "basic",
-                                "from": {
-                                    "key_code": "right_arrow",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ],
-                                        "mandatory": [
-                                            "left_control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "up_arrow"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
                         "description": "Control b (left_command+b to right_control+b)",
                         "manipulators": [
                             {
@@ -1474,6 +1426,88 @@
                                     },
                                     {
                                         "key_code": "quote"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Down (left_control + left_arrow)",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "left_arrow",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ],
+                                        "mandatory": [
+                                            "left_control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow"
+                                    }
+                                ],
+                                "conditions": [
+                                    {
+                                        "type": "device_if",
+                                        "identifiers": [
+                                            {
+                                                "vendor_id": 1241,
+                                                "product_id": 355,
+                                                "is_keyboard": true
+                                            },
+                                            {
+                                                "vendor_id": 6127,
+                                                "product_id": 24647,
+                                                "is_keyboard": true
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Up (left_control + right_arrow)",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "right_arrow",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ],
+                                        "mandatory": [
+                                            "left_control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "up_arrow"
+                                    }
+                                ],
+                                "conditions": [
+                                    {
+                                        "type": "device_if",
+                                        "identifiers": [
+                                            {
+                                                "vendor_id": 1241,
+                                                "product_id": 355,
+                                                "is_keyboard": true
+                                            },
+                                            {
+                                                "vendor_id": 6127,
+                                                "product_id": 24647,
+                                                "is_keyboard": true
+                                            }
+                                        ]
                                     }
                                 ]
                             }
