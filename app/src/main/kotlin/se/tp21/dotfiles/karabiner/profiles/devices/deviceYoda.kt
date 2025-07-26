@@ -9,9 +9,9 @@ fun deviceConfigurationYoda(): DeviceConfiguration = DeviceConfiguration(
 )
 
 fun deviceIfRulesYoda(): List<KarabinerRule> =
-    sixtyPercentYoda().rules.withDeviceIfConditionFor(deviceIdentifierYoda())
+    sixtyPercentYoda().rules.withDeviceIfConditionFor(listOf(deviceIdentifierYoda()))
 
-private fun deviceIdentifierYoda(): DeviceIdentifier = deviceIdentifierThinkPadDock()
+fun deviceIdentifierYoda(): DeviceIdentifier = deviceIdentifierThinkPadDock()
 
 private fun simpleModificationsYoda() =
     listOf(

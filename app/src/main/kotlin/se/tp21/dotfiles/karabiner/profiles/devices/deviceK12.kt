@@ -9,9 +9,9 @@ fun deviceConfigurationK12(): DeviceConfiguration = DeviceConfiguration(
 )
 
 fun deviceIfRulesK12(): List<KarabinerRule> =
-    sixtyPercentK12().rules.withDeviceIfConditionFor(deviceIdentifierK12())
+    sixtyPercentK12().rules.withDeviceIfConditionFor(listOf(deviceIdentifierK12()))
 
-private fun deviceIdentifierK12(): DeviceIdentifier = deviceIdentifierBlueTooth()
+fun deviceIdentifierK12(): DeviceIdentifier = deviceIdentifierBlueTooth()
 
 
 private fun simpleModificationsK12() =
