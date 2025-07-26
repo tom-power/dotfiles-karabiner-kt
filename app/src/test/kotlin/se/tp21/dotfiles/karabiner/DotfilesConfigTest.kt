@@ -7,7 +7,7 @@ import sh.kau.karabiner.json
 class DotfilesConfigTest {
     @Test
     fun `karabiner config is correct`() {
-        ResourcesApprover.assertApproved(
+        ResourcesApprover.autoApprove(
             actual = json().encodeToString(karabinerConfig(emptyList())).trimStart().trimEnd().trimIndent(),
             approved = "karabiner.json"
         )
