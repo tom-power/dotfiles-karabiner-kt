@@ -1,7 +1,7 @@
 package se.tp21.dotfiles.karabiner
 
-import java.io.File
+import se.tp21.resourcesapprover.ResourcesApprover
 
 fun main() {
-    approveAllIn(File("app/src/test/resources"))
+    ResourcesApprover.approveAllIn("app")
 }
