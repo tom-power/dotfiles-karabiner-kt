@@ -4,7 +4,7 @@ import se.tp21.dotfiles.karabiner.profiles.utils.simpleModificationsGlobal
 import sh.kau.karabiner.DeviceConfiguration
 import sh.kau.karabiner.DeviceIdentifier
 
-fun deviceConfigurationShinobi(): DeviceConfiguration =
+fun deviceConfigurationShinobi() =
     DeviceConfiguration(
         identifiers = deviceIdentifierShinobi(),
         simpleModifications = simpleModificationsGlobal()

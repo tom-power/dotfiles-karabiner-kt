@@ -3,13 +3,13 @@ package se.tp21.dotfiles.karabiner.profiles.utils
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLike
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasNavigation
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasSymbols
-import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasTerminal
-import se.tp21.karabiner.larks.larksCommandControl
+import se.tp21.karabiner.larks.larksTerminal
 import se.tp21.karabiner.larks.larksMacToPc
 import se.tp21.karabiner.larks.larksNavigation
 import se.tp21.karabiner.larks.larksNoQuit
 import se.tp21.karabiner.larks.larksWrap
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasEditing
+import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasTerminal
 import sh.kau.karabiner.KarabinerRule
 
 fun baseRules(): List<KarabinerRule> =
@@ -17,19 +17,21 @@ fun baseRules(): List<KarabinerRule> =
         + larks())
 
 private fun rightShiftViLikes(): List<KarabinerRule> =
-    (rightShiftViLike().rules.filterNot { it.description in listOf(home, end) }
+    (rightShiftViLikeWithTerminalExtras()
         + rightShiftViLikeExtrasEditing().rules
         + rightShiftViLikeExtrasNavigation().rules
         + rightShiftViLikeExtrasSymbols().rules
-        + rightShiftViLikeExtrasTerminal().rules)
+)
+
+private fun rightShiftViLikeWithTerminalExtras(): List<KarabinerRule> =
+    (rightShiftViLikeExtrasTerminal().rules // order is important as has overrides
+        + rightShiftViLike().rules)
 
 private fun larks(): List<KarabinerRule> =
-    (larksCommandControl().rules
+    (larksTerminal().rules
         + larksMacToPc().rules.filter { it.description == doubleQuote }
         + larksNavigation().rules
         + larksNoQuit().rules
         + larksWrap().rules)
 
-private const val home = "Home (right_shift+a to fn+left)"
-private const val end = "End (right_shift+e to fn+right)"
 private const val doubleQuote = "\" (right_shift + 2)"

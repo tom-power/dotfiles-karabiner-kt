@@ -3,10 +3,11 @@ package se.tp21.dotfiles.karabiner.profiles.devices
 import se.tp21.sixtypercent.karabiner.modifications.sixtyPercentYoda
 import sh.kau.karabiner.*
 
-fun deviceConfigurationYoda(): DeviceConfiguration = DeviceConfiguration(
-    identifiers = deviceIdentifierYoda(),
-    simpleModifications = simpleModificationsYoda(),
-)
+fun deviceConfigurationYoda() =
+    DeviceConfiguration(
+        identifiers = deviceIdentifierYoda(),
+        simpleModifications = simpleModificationsYoda(),
+    )
 
 fun deviceIfRulesYoda(): List<KarabinerRule> =
     sixtyPercentYoda().rules.withDeviceIfConditionFor(listOf(deviceIdentifierYoda()))
