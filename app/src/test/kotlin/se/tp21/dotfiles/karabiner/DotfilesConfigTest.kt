@@ -8,7 +8,7 @@ class DotfilesConfigTest {
     @Test
     fun `karabiner config is correct`() {
         ResourcesApproval.assertApproved(
-            actual = json().encodeToString(karabinerConfig(emptyList())).trimStart().trimEnd().trimIndent(),
+            actual = json().encodeToString(karabinerConfig(emptyList())),
             approved = "karabiner.json"
         )
     }
