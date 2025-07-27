@@ -7,7 +7,7 @@ Personal [karabiner](https://karabiner-elements.pqrs.org/) config built using a 
 - [larks-karabiner-kt](https://github.com/tom-power/larks-karabiner-kt)
 - [snippets-karabiner-kt](https://github.com/tom-power/snippets-karabiner-kt)
 
-it's been lots of fun, and helped simplify my config using [device if](https://karabiner-elements.pqrs.org/docs/json/complex-modifications-manipulator-definition/conditions/device/), which I'd never be bothered to write in json :)
+it's been lots of fun, and helped simplify/get a better understanding of my config.
 
 ## installation
 
