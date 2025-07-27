@@ -10,20 +10,16 @@ internal fun List<KarabinerRule>.withDeviceIfConditionFor(identifiers: List<Devi
     return this.map { rule ->
         rule.copy(
             manipulators =
-                rule.manipulators
-                    ?.map { manipulator ->
-                        manipulator.withDeviceIfCondition(deviceIfCondition)
-                    }
+                rule.manipulators?.map { manipulator ->
+                    manipulator.withDeviceIfCondition(deviceIfCondition)
+                }
         )
     }
 }
 
 private fun Manipulator.withDeviceIfCondition(deviceIfCondition: Condition.DeviceIfCondition): Manipulator =
     this.copy(
-        conditions =
-            this.conditions
-                ?.plus(listOf<Condition>(deviceIfCondition))
-                ?: listOf<Condition>(deviceIfCondition)
+        conditions = listOf<Condition>(deviceIfCondition).plus(this.conditions.orEmpty())
     )
 
 internal fun deviceIdentifierThinkPadDock(): DeviceIdentifier =
