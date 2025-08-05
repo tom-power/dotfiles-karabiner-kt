@@ -28,7 +28,6 @@ fun tp(snippetRules: List<KarabinerRule>): Profile =
                 deviceConfigurationShura(),
                 deviceConfigurationK12(),
                 deviceConfigurationYoda(),
-                deviceConfigurationShinobi()
             ),
         virtualHidKeyboard = keyboardAnsi(),
         selected = true

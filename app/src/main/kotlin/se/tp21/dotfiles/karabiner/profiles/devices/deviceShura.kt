@@ -8,7 +8,11 @@ fun deviceConfigurationShura() =
         simpleModifications = simpleModificationsShura(),
     )
 
-private fun deviceIdentifierShura(): DeviceIdentifier = deviceIdentifierThinkPadDock()
+private fun deviceIdentifierShura(): DeviceIdentifier = DeviceIdentifier(
+    isKeyboard = true,
+    vendorId = 6127,
+    productId = 24647,
+)
 
 private fun simpleModificationsShura() =
     listOf(
