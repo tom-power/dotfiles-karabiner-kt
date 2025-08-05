@@ -23,12 +23,12 @@ fun simpleModificationsGlobal(): List<SimpleModification> =
         SimpleModification(
             from =
                 SimpleModificationKey(
-                    keyCode = KeyCode.NonUsBackslash,
+                    keyCode = KeyCode.NonUsBackslash, // §
                 ),
             to =
                 listOf(
                     SimpleModificationValue(
-                        keyCode = KeyCode.GraveAccentAndTilde,
+                        keyCode = KeyCode.GraveAccentAndTilde, // `~
                     )
                 )
         )
