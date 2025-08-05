@@ -1,6 +1,5 @@
 package se.tp21.dotfiles.karabiner.profiles.devices
 
-import se.tp21.sixtypercent.karabiner.modifications.sixtyPercentK12
 import sh.kau.karabiner.*
 
 fun deviceConfigurationK12() =
@@ -9,39 +8,36 @@ fun deviceConfigurationK12() =
         simpleModifications = simpleModificationsK12(),
     )
 
-fun deviceIfRulesK12(): List<KarabinerRule> =
-    sixtyPercentK12().rules.withDeviceIfConditionFor(listOf(deviceIdentifierK12()))
-
-fun deviceIdentifierK12(): DeviceIdentifier = DeviceIdentifier(
-    isKeyboard = true,
-    vendorId = 1241,
-    productId = 591
-)
-
+fun deviceIdentifierK12() =
+    DeviceIdentifier(
+        isKeyboard = true,
+        vendorId = 1241,
+        productId = 591
+    )
 
 private fun simpleModificationsK12() =
     listOf(
         SimpleModification(
             from =
                 SimpleModificationKey(
-                    keyCode = ModifierKeyCode.LeftOption,
+                    keyCode = ModifierKeyCode.Fn,
                 ),
             to =
                 listOf(
                     SimpleModificationValue(
-                        keyCode = ModifierKeyCode.LeftCommand,
+                        keyCode = KeyCode.LeftArrow,
                     )
                 )
         ),
         SimpleModification(
             from =
                 SimpleModificationKey(
-                    keyCode = ModifierKeyCode.LeftCommand,
+                    keyCode = ModifierKeyCode.RightControl,
                 ),
             to =
                 listOf(
                     SimpleModificationValue(
-                        keyCode = ModifierKeyCode.LeftOption,
+                        keyCode = KeyCode.RightArrow,
                     )
                 )
         )

@@ -2,6 +2,7 @@ package se.tp21.dotfiles.karabiner
 
 import org.junit.jupiter.api.Test
 import se.tp21.resourcesapproval.ResourcesApproval
+import se.tp21.resourcesapproval.WriteTo
 import sh.kau.karabiner.json
 
 class DotfilesConfigTest {
@@ -9,7 +10,8 @@ class DotfilesConfigTest {
     fun `karabiner config is correct`() {
         ResourcesApproval.assertApproved(
             actual = json().encodeToString(karabinerConfig(emptyList())),
-            approved = "karabiner.json"
+            approved = "karabiner.json",
+            writeTo = WriteTo.Approved
         )
     }
 }

@@ -1434,127 +1434,6 @@
                         ]
                     },
                     {
-                        "description": "Down (left_control + left_arrow)",
-                        "manipulators": [
-                            {
-                                "type": "basic",
-                                "from": {
-                                    "key_code": "left_arrow",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ],
-                                        "mandatory": [
-                                            "left_control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "down_arrow"
-                                    }
-                                ],
-                                "conditions": [
-                                    {
-                                        "type": "device_if",
-                                        "identifiers": [
-                                            {
-                                                "vendor_id": 1241,
-                                                "product_id": 355,
-                                                "is_keyboard": true
-                                            },
-                                            {
-                                                "vendor_id": 6127,
-                                                "product_id": 24647,
-                                                "is_keyboard": true
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Up (left_control + right_arrow)",
-                        "manipulators": [
-                            {
-                                "type": "basic",
-                                "from": {
-                                    "key_code": "right_arrow",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ],
-                                        "mandatory": [
-                                            "left_control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "up_arrow"
-                                    }
-                                ],
-                                "conditions": [
-                                    {
-                                        "type": "device_if",
-                                        "identifiers": [
-                                            {
-                                                "vendor_id": 1241,
-                                                "product_id": 355,
-                                                "is_keyboard": true
-                                            },
-                                            {
-                                                "vendor_id": 6127,
-                                                "product_id": 24647,
-                                                "is_keyboard": true
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "description": "~/ (right_shift + escape)",
-                        "manipulators": [
-                            {
-                                "type": "basic",
-                                "from": {
-                                    "key_code": "escape",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "right_shift"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "grave_accent_and_tilde",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ]
-                                    },
-                                    {
-                                        "key_code": "slash"
-                                    }
-                                ],
-                                "conditions": [
-                                    {
-                                        "type": "device_if",
-                                        "identifiers": [
-                                            {
-                                                "vendor_id": 1241,
-                                                "product_id": 355,
-                                                "is_keyboard": true
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
                         "description": "` (right_command + escape)",
                         "manipulators": [
                             {
@@ -1576,6 +1455,11 @@
                                     {
                                         "type": "device_if",
                                         "identifiers": [
+                                            {
+                                                "vendor_id": 1241,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
                                             {
                                                 "vendor_id": 1241,
                                                 "product_id": 355,
@@ -1615,6 +1499,11 @@
                                         "identifiers": [
                                             {
                                                 "vendor_id": 1241,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
+                                            {
+                                                "vendor_id": 1241,
                                                 "product_id": 355,
                                                 "is_keyboard": true
                                             }
@@ -1649,6 +1538,11 @@
                                     {
                                         "type": "device_if",
                                         "identifiers": [
+                                            {
+                                                "vendor_id": 1241,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
                                             {
                                                 "vendor_id": 1241,
                                                 "product_id": 355,
@@ -1687,6 +1581,11 @@
                                         "identifiers": [
                                             {
                                                 "vendor_id": 1241,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
+                                            {
+                                                "vendor_id": 1241,
                                                 "product_id": 355,
                                                 "is_keyboard": true
                                             }
@@ -1721,6 +1620,11 @@
                                     {
                                         "type": "device_if",
                                         "identifiers": [
+                                            {
+                                                "vendor_id": 1241,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
                                             {
                                                 "vendor_id": 1241,
                                                 "product_id": 355,
@@ -1759,6 +1663,11 @@
                                         "identifiers": [
                                             {
                                                 "vendor_id": 1241,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
+                                            {
+                                                "vendor_id": 1241,
                                                 "product_id": 355,
                                                 "is_keyboard": true
                                             }
@@ -1793,6 +1702,11 @@
                                     {
                                         "type": "device_if",
                                         "identifiers": [
+                                            {
+                                                "vendor_id": 1241,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
                                             {
                                                 "vendor_id": 1241,
                                                 "product_id": 355,
@@ -1831,6 +1745,11 @@
                                         "identifiers": [
                                             {
                                                 "vendor_id": 1241,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
+                                            {
+                                                "vendor_id": 1241,
                                                 "product_id": 355,
                                                 "is_keyboard": true
                                             }
@@ -1865,6 +1784,11 @@
                                     {
                                         "type": "device_if",
                                         "identifiers": [
+                                            {
+                                                "vendor_id": 1241,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
                                             {
                                                 "vendor_id": 1241,
                                                 "product_id": 355,
@@ -1903,6 +1827,11 @@
                                         "identifiers": [
                                             {
                                                 "vendor_id": 1241,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
+                                            {
+                                                "vendor_id": 1241,
                                                 "product_id": 355,
                                                 "is_keyboard": true
                                             }
@@ -1937,6 +1866,11 @@
                                     {
                                         "type": "device_if",
                                         "identifiers": [
+                                            {
+                                                "vendor_id": 1241,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
                                             {
                                                 "vendor_id": 1241,
                                                 "product_id": 355,
@@ -1975,6 +1909,11 @@
                                         "identifiers": [
                                             {
                                                 "vendor_id": 1241,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
+                                            {
+                                                "vendor_id": 1241,
                                                 "product_id": 355,
                                                 "is_keyboard": true
                                             }
@@ -2009,6 +1948,11 @@
                                     {
                                         "type": "device_if",
                                         "identifiers": [
+                                            {
+                                                "vendor_id": 1241,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
                                             {
                                                 "vendor_id": 1241,
                                                 "product_id": 355,
@@ -2047,6 +1991,11 @@
                                         "identifiers": [
                                             {
                                                 "vendor_id": 1241,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
+                                            {
+                                                "vendor_id": 1241,
                                                 "product_id": 355,
                                                 "is_keyboard": true
                                             }
@@ -2083,6 +2032,11 @@
                                         "identifiers": [
                                             {
                                                 "vendor_id": 1241,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
+                                            {
+                                                "vendor_id": 1241,
                                                 "product_id": 355,
                                                 "is_keyboard": true
                                             }
@@ -2114,6 +2068,11 @@
                                     {
                                         "type": "device_if",
                                         "identifiers": [
+                                            {
+                                                "vendor_id": 1241,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
                                             {
                                                 "vendor_id": 1241,
                                                 "product_id": 355,
@@ -2149,6 +2108,11 @@
                                         "identifiers": [
                                             {
                                                 "vendor_id": 1241,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
+                                            {
+                                                "vendor_id": 1241,
                                                 "product_id": 355,
                                                 "is_keyboard": true
                                             }
@@ -2180,6 +2144,11 @@
                                     {
                                         "type": "device_if",
                                         "identifiers": [
+                                            {
+                                                "vendor_id": 1241,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
                                             {
                                                 "vendor_id": 1241,
                                                 "product_id": 355,
@@ -2215,6 +2184,11 @@
                                         "identifiers": [
                                             {
                                                 "vendor_id": 1241,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
+                                            {
+                                                "vendor_id": 1241,
                                                 "product_id": 355,
                                                 "is_keyboard": true
                                             }
@@ -2248,6 +2222,11 @@
                                         "identifiers": [
                                             {
                                                 "vendor_id": 1241,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
+                                            {
+                                                "vendor_id": 1241,
                                                 "product_id": 355,
                                                 "is_keyboard": true
                                             }
@@ -2279,6 +2258,93 @@
                                     {
                                         "type": "device_if",
                                         "identifiers": [
+                                            {
+                                                "vendor_id": 1241,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
+                                            {
+                                                "vendor_id": 1241,
+                                                "product_id": 355,
+                                                "is_keyboard": true
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Down (left_control + left_arrow)",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "left_arrow",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ],
+                                        "mandatory": [
+                                            "left_control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow"
+                                    }
+                                ],
+                                "conditions": [
+                                    {
+                                        "type": "device_if",
+                                        "identifiers": [
+                                            {
+                                                "vendor_id": 1241,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
+                                            {
+                                                "vendor_id": 1241,
+                                                "product_id": 355,
+                                                "is_keyboard": true
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Up (left_control + right_arrow)",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "right_arrow",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ],
+                                        "mandatory": [
+                                            "left_control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "up_arrow"
+                                    }
+                                ],
+                                "conditions": [
+                                    {
+                                        "type": "device_if",
+                                        "identifiers": [
+                                            {
+                                                "vendor_id": 1241,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
                                             {
                                                 "vendor_id": 1241,
                                                 "product_id": 355,
@@ -2319,8 +2385,13 @@
                                         "type": "device_if",
                                         "identifiers": [
                                             {
-                                                "vendor_id": 6127,
-                                                "product_id": 24647,
+                                                "vendor_id": 1241,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
+                                            {
+                                                "vendor_id": 1241,
+                                                "product_id": 355,
                                                 "is_keyboard": true
                                             }
                                         ]
@@ -2355,8 +2426,13 @@
                                         "type": "device_if",
                                         "identifiers": [
                                             {
-                                                "vendor_id": 6127,
-                                                "product_id": 24647,
+                                                "vendor_id": 1241,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
+                                            {
+                                                "vendor_id": 1241,
+                                                "product_id": 355,
                                                 "is_keyboard": true
                                             }
                                         ]
@@ -2398,7 +2474,7 @@
                 {
                     "identifiers": {
                         "vendor_id": 1452,
-                        "product_id": 591,
+                        "product_id": 835,
                         "is_keyboard": true
                     }
                 },
@@ -2441,56 +2517,27 @@
                 {
                     "identifiers": {
                         "vendor_id": 1241,
-                        "product_id": 355,
+                        "product_id": 591,
                         "is_keyboard": true
                     },
                     "simple_modifications": [
                         {
                             "from": {
-                                "key_code": "left_option"
+                                "key_code": "fn"
                             },
                             "to": [
                                 {
-                                    "key_code": "left_command"
+                                    "key_code": "left_arrow"
                                 }
                             ]
                         },
                         {
                             "from": {
-                                "key_code": "left_command"
+                                "key_code": "right_control"
                             },
                             "to": [
                                 {
-                                    "key_code": "left_option"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "identifiers": {
-                        "vendor_id": 6127,
-                        "product_id": 24647,
-                        "is_keyboard": true
-                    },
-                    "simple_modifications": [
-                        {
-                            "from": {
-                                "key_code": "left_option"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "left_command"
-                                }
-                            ]
-                        },
-                        {
-                            "from": {
-                                "key_code": "left_command"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "left_option"
+                                    "key_code": "right_arrow"
                                 }
                             ]
                         }
@@ -2505,7 +2552,7 @@
                     "simple_modifications": [
                         {
                             "from": {
-                                "key_code": "caps_lock"
+                                "key_code": "left_option"
                             },
                             "to": [
                                 {
@@ -2515,11 +2562,11 @@
                         },
                         {
                             "from": {
-                                "key_code": "non_us_backslash"
+                                "key_code": "left_command"
                             },
                             "to": [
                                 {
-                                    "key_code": "grave_accent_and_tilde"
+                                    "key_code": "left_option"
                                 }
                             ]
                         }
