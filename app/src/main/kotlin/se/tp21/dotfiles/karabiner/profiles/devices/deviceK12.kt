@@ -15,7 +15,7 @@ fun deviceIdentifierK12() =
         productId = 591
     )
 
-private fun simpleModificationsK12() =
+fun simpleModificationsK12() =
     listOf(
         SimpleModification(
             from =

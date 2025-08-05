@@ -10,11 +10,15 @@ import se.tp21.karabiner.larks.larksNoQuit
 import se.tp21.karabiner.larks.larksWrap
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasEditing
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasTerminal
+import se.tp21.sixtypercent.karabiner.modifications.sixtyPercentFn
+import se.tp21.sixtypercent.karabiner.modifications.sixtyPercentNavigation
+import se.tp21.sixtypercent.karabiner.modifications.sixtyPercentSymbols
 import sh.kau.karabiner.KarabinerRule
 
 fun baseRules(): List<KarabinerRule> =
     (rightShiftViLikes()
-        + larks())
+        + larks()
+        + sixtyPercentRules())
 
 private fun rightShiftViLikes(): List<KarabinerRule> =
     (rightShiftViLikeWithTerminalExtras()
@@ -35,3 +39,8 @@ private fun larks(): List<KarabinerRule> =
         + larksWrap().rules)
 
 private const val doubleQuote = "\" (right_shift + 2)"
+
+private fun sixtyPercentRules() =
+    sixtyPercentFn().rules +
+        sixtyPercentNavigation().rules +
+        sixtyPercentSymbols().rules
