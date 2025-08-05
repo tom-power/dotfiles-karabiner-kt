@@ -12,6 +12,6 @@ private fun deviceIdentifierMacbookPro(): DeviceIdentifier =
     DeviceIdentifier(
         isKeyboard = true,
         vendorId = 1452,
-        productId = 591,
+        productId = 835,
     )
 

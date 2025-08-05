@@ -22,16 +22,3 @@ private fun Manipulator.withDeviceIfCondition(deviceIfCondition: Condition.Devic
         conditions = listOf<Condition>(deviceIfCondition).plus(this.conditions.orEmpty())
     )
 
-internal fun deviceIdentifierThinkPadDock(): DeviceIdentifier =
-    DeviceIdentifier(
-        isKeyboard = true,
-        vendorId = 6127,
-        productId = 24647,
-    )
-
-internal fun deviceIdentifierBlueTooth(): DeviceIdentifier =
-    DeviceIdentifier(
-        isKeyboard = true,
-        vendorId = 1241,
-        productId = 355
-    )

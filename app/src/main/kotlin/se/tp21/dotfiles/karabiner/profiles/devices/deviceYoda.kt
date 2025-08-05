@@ -12,7 +12,11 @@ fun deviceConfigurationYoda() =
 fun deviceIfRulesYoda(): List<KarabinerRule> =
     sixtyPercentYoda().rules.withDeviceIfConditionFor(listOf(deviceIdentifierYoda()))
 
-fun deviceIdentifierYoda(): DeviceIdentifier = deviceIdentifierThinkPadDock()
+fun deviceIdentifierYoda(): DeviceIdentifier = DeviceIdentifier(
+    isKeyboard = true,
+    vendorId = 1241,
+    productId = 355,
+)
 
 private fun simpleModificationsYoda() =
     listOf(

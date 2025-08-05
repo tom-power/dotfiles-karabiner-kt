@@ -12,7 +12,11 @@ fun deviceConfigurationK12() =
 fun deviceIfRulesK12(): List<KarabinerRule> =
     sixtyPercentK12().rules.withDeviceIfConditionFor(listOf(deviceIdentifierK12()))
 
-fun deviceIdentifierK12(): DeviceIdentifier = deviceIdentifierBlueTooth()
+fun deviceIdentifierK12(): DeviceIdentifier = DeviceIdentifier(
+    isKeyboard = true,
+    vendorId = 1241,
+    productId = 591
+)
 
 
 private fun simpleModificationsK12() =
