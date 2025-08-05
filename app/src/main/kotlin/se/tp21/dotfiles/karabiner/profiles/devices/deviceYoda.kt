@@ -1,6 +1,5 @@
 package se.tp21.dotfiles.karabiner.profiles.devices
 
-import se.tp21.sixtypercent.karabiner.modifications.sixtyPercentYoda
 import sh.kau.karabiner.*
 
 fun deviceConfigurationYoda() =
@@ -9,14 +8,12 @@ fun deviceConfigurationYoda() =
         simpleModifications = simpleModificationsYoda(),
     )
 
-fun deviceIfRulesYoda(): List<KarabinerRule> =
-    sixtyPercentYoda().rules.withDeviceIfConditionFor(listOf(deviceIdentifierYoda()))
-
-fun deviceIdentifierYoda(): DeviceIdentifier = DeviceIdentifier(
-    isKeyboard = true,
-    vendorId = 1241,
-    productId = 355,
-)
+fun deviceIdentifierYoda() =
+    DeviceIdentifier(
+        isKeyboard = true,
+        vendorId = 1241,
+        productId = 355,
+    )
 
 private fun simpleModificationsYoda() =
     listOf(
