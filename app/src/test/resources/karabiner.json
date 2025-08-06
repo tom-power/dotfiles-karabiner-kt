@@ -2015,6 +2015,3578 @@
                                 ]
                             }
                         ]
+                    },
+                    {
+                        "description": "test",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "t"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": "t"
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "t"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "t"
+                                    }
+                                ],
+                                "description": "t"
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "spacebar"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "key_code": "delete_or_backspace"
+                                    },
+                                    {
+                                        "key_code": "t"
+                                    },
+                                    {
+                                        "key_code": "e"
+                                    },
+                                    {
+                                        "key_code": "s"
+                                    },
+                                    {
+                                        "key_code": "t"
+                                    }
+                                ],
+                                "conditions": [
+                                    {
+                                        "type": "variable_if",
+                                        "name": "lastKey",
+                                        "value": "t"
+                                    },
+                                    {
+                                        "type": "variable_if",
+                                        "name": "snippetKeys",
+                                        "value": "t"
+                                    }
+                                ],
+                                "description": "t"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "snippets - fall through",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "a"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "a"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "a"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "alternate_erase"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "alternateerase"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "alternate_erase"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "apple_display_brightness_decrement"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "appledisplaybrightnessdecrement"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "apple_display_brightness_decrement"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "apple_display_brightness_increment"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "appledisplaybrightnessincrement"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "apple_display_brightness_increment"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "apple_top_case_display_brightness_decrement"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "appletopcasedisplaybrightnessdecrement"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "apple_top_case_display_brightness_decrement"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "apple_top_case_display_brightness_increment"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "appletopcasedisplaybrightnessincrement"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "apple_top_case_display_brightness_increment"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "b"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "b"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "b"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "backslash"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "backslash"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "backslash"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "c"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "c"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "c"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "cancel"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "cancel"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "cancel"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "caps_lock"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "capslock"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "caps_lock"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "clear"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "clear"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "clear"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "clear_or_again"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "clearoragain"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "clear_or_again"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "close_bracket"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "closebracket"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "close_bracket"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "comma"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "comma"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "comma"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "cr_sel_or_props"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "crselorprops"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "cr_sel_or_props"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "d"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "d"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "d"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "dashboard"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "dashboard"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "dashboard"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "delete_forward"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "deleteforward"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "delete_forward"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "delete_or_backspace"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "deleteorbackspace"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "delete_or_backspace"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "display_brightness_decrement"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "displaybrightnessdecrement"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "display_brightness_decrement"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "display_brightness_increment"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "displaybrightnessincrement"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "display_brightness_increment"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "down_arrow"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "downarrow"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "e"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "e"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "e"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "eject"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "eject"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "eject"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "end"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "end"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "end"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "equal_sign"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "equalsign"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "equal_sign"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "escape"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "escape"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "escape"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "ex_sel"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "exsel"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "ex_sel"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "f"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "f"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "f"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "f1"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "f1"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "f1"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "f10"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "f10"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "f10"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "f11"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "f11"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "f11"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "f12"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "f12"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "f12"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "f13"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "f13"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "f13"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "f14"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "f14"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "f14"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "f15"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "f15"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "f15"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "f16"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "f16"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "f16"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "f17"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "f17"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "f17"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "f18"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "f18"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "f18"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "f19"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "f19"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "f19"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "f2"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "f2"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "f2"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "f20"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "f20"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "f20"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "f21"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "f21"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "f21"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "f22"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "f22"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "f22"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "f23"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "f23"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "f23"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "f24"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "f24"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "f24"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "f3"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "f3"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "f3"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "f4"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "f4"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "f4"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "f5"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "f5"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "f5"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "f6"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "f6"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "f6"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "f7"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "f7"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "f7"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "f8"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "f8"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "f8"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "f9"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "f9"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "f9"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "fastforward"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "fastforward"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "fastforward"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "g"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "g"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "g"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "grave_accent_and_tilde"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "graveaccentandtilde"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "grave_accent_and_tilde"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "h"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "h"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "h"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "home"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "home"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "home"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "hyphen"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "hyphen"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "hyphen"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "i"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "i"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "i"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "illumination_decrement"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "illuminationdecrement"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "illumination_decrement"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "illumination_increment"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "illuminationincrement"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "illumination_increment"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "j"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "j"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "j"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "k"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "k"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "k"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "keypad_0"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "keypad0"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_0"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "keypad_1"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "keypad1"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_1"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "keypad_2"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "keypad2"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_2"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "keypad_3"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "keypad3"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_3"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "keypad_4"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "keypad4"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_4"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "keypad_5"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "keypad5"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_5"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "keypad_6"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "keypad6"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_6"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "keypad_7"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "keypad7"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_7"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "keypad_8"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "keypad8"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_8"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "keypad_9"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "keypad9"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_9"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "keypad_asterisk"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "keypadasterisk"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_asterisk"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "keypad_comma"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "keypadcomma"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_comma"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "keypad_enter"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "keypadenter"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_enter"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "keypad_equal_sign"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "keypadequalsign"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_equal_sign"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "keypad_equal_sign_as400"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "keypadequalsignas400"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_equal_sign_as400"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "keypad_hyphen"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "keypadhyphen"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_hyphen"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "keypad_num_lock"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "keypadnumlock"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_num_lock"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "keypad_period"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "keypadperiod"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_period"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "keypad_plus"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "keypadplus"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_plus"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "keypad_slash"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "keypadslash"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "keypad_slash"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "l"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "l"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "l"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "launchpad"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "launchpad"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "launchpad"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "left_arrow"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "leftarrow"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "left_arrow"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "locking_caps_lock"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "lockingcapslock"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "locking_caps_lock"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "locking_num_lock"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "lockingnumlock"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "locking_num_lock"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "locking_scroll_lock"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "lockingscrolllock"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "locking_scroll_lock"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "m"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "m"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "m"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "mission_control"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "missioncontrol"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "mission_control"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "mute"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "mute"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "mute"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "n"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "n"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "n"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "non_us_backslash"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "nonusbackslash"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "non_us_backslash"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "non_us_pound"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "nonuspound"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "non_us_pound"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "0"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "num0"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "0"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "1"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "num1"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "1"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "2"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "num2"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "2"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "3"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "num3"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "3"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "4"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "num4"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "4"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "5"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "num5"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "5"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "6"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "num6"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "6"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "7"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "num7"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "7"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "8"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "num8"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "8"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "9"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "num9"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "9"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "o"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "o"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "o"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "open_bracket"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "openbracket"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "open_bracket"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "oper"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "oper"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "oper"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "out"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "out"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "out"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "p"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "p"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "p"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "page_down"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "pagedown"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "page_down"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "page_up"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "pageup"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "page_up"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "period"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "period"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "period"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "play_or_pause"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "playorpause"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "play_or_pause"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "prior"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "prior"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "prior"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "q"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "q"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "q"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "quote"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "quote"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "quote"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "r"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "r"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "r"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "return"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "return"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "return"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "return_or_enter"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "returnorenter"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "return_or_enter"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "rewind"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "rewind"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "rewind"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "right_arrow"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "rightarrow"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "right_arrow"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "s"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "s"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "s"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "semicolon"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "semicolon"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "semicolon"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "separator"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "separator"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "separator"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "slash"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "slash"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "slash"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "spacebar"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "spacebar"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "spacebar"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "sys_req_or_attention"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "sysreqorattention"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "sys_req_or_attention"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "t"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "t"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "t"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "tab"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "tab"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "tab"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "u"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "u"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "u"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "up_arrow"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "uparrow"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "v"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "v"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "v"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "vk_consumer_brightness_down"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "vkconsumerbrightnessdown"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "vk_consumer_brightness_down"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "vk_consumer_brightness_up"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "vkconsumerbrightnessup"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "vk_consumer_brightness_up"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "vk_consumer_illumination_down"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "vkconsumerilluminationdown"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "vk_consumer_illumination_down"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "vk_consumer_illumination_up"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "vkconsumerilluminationup"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "vk_consumer_illumination_up"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "vk_consumer_next"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "vkconsumernext"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "vk_consumer_next"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "vk_consumer_play"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "vkconsumerplay"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "vk_consumer_play"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "vk_consumer_previous"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "vkconsumerprevious"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "vk_consumer_previous"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "vk_dashboard"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "vkdashboard"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "vk_dashboard"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "vk_launchpad"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "vklaunchpad"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "vk_launchpad"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "vk_mission_control"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "vkmissioncontrol"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "vk_mission_control"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "volume_decrement"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "volumedecrement"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "volume_decrement"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "volume_increment"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "volumeincrement"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "volume_increment"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "w"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "w"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "w"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "x"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "x"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "x"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "y"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "y"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "y"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "z"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "z"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "z"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "hyper"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "snippetKeys",
+                                            "value": 0
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "lastKey",
+                                            "value": "hyper"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "hyper"
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             },

@@ -1,0 +1,9 @@
+{
+  "rules": [
+    {
+      "description": "test",
+      "keys": "t",
+      "replacement": "test"
+    }
+  ]
+}
