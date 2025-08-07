@@ -15,7 +15,14 @@ fun deviceIdentifierK12() =
         productId = 591
     )
 
-fun simpleModificationsK12() =
+fun deviceIfK12Rules(): List<KarabinerRule> =
+    sixtyPercentRules().withDeviceIfConditionFor(
+        listOf(
+            deviceIdentifierK12()
+        )
+    )
+
+private fun simpleModificationsK12() =
     listOf(
         SimpleModification(
             from =

@@ -15,6 +15,13 @@ fun deviceIdentifierYoda() =
         productId = 355,
     )
 
+fun deviceIfYodaRules(): List<KarabinerRule> =
+    sixtyPercentRules().withDeviceIfConditionFor(
+        listOf(
+            deviceIdentifierYoda()
+        )
+    )
+
 private fun simpleModificationsYoda() =
     listOf(
         SimpleModification(
