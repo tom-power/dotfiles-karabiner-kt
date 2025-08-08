@@ -39,7 +39,7 @@ private fun larks(): List<KarabinerRule> =
 
 private const val doubleQuote = "\" (right_shift + 2)"
 
-private fun sixtyPercentRules() =
+fun sixtyPercentRules() =
     sixtyPercentFn().rules +
         sixtyPercentNavigation().rules +
         sixtyPercentSymbols().rules
