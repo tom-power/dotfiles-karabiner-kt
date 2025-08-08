@@ -1,4 +1,4 @@
-package se.tp21.dotfiles.karabiner.profiles.snippets
+package se.tp21.dotfiles.karabiner.profiles.utils
 
 import se.tp21.karabiner.snippets.SnippetRules
 import se.tp21.karabiner.snippets.complexModificationsFrom

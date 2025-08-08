@@ -1,6 +1,6 @@
 package se.tp21.dotfiles.karabiner
 
-import se.tp21.dotfiles.karabiner.profiles.snippets.snippetModifications
+import se.tp21.dotfiles.karabiner.profiles.utils.snippetModifications
 import sh.kau.karabiner.json
 import java.io.File
 
