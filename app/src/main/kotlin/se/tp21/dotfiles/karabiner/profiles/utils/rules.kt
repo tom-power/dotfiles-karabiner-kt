@@ -3,11 +3,11 @@ package se.tp21.dotfiles.karabiner.profiles.utils
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLike
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasNavigation
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasSymbols
-import se.tp21.karabiner.larks.larks.larksTerminal
-import se.tp21.karabiner.larks.larks.larksMacToPc
-import se.tp21.karabiner.larks.larks.larksNavigation
-import se.tp21.karabiner.larks.larks.larksNoQuit
-import se.tp21.karabiner.larks.larks.larksWrap
+import se.tp21.larks.karabiner.modifications.larksTerminal
+import se.tp21.larks.karabiner.modifications.larksMacToPc
+import se.tp21.larks.karabiner.modifications.larksNavigation
+import se.tp21.larks.karabiner.modifications.larksNoQuit
+import se.tp21.larks.karabiner.modifications.larksWrap
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasEditing
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasTerminal
 import se.tp21.sixtypercent.karabiner.modifications.sixtyPercentFunctionKeys
