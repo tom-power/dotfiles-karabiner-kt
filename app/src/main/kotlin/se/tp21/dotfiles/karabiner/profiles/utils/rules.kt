@@ -16,26 +16,25 @@ import se.tp21.sixtypercent.karabiner.modifications.sixtyPercentSymbols
 import sh.kau.karabiner.KarabinerRule
 
 fun baseRules(): List<KarabinerRule> =
-    (rightShiftViLikes()
-        + larks())
+    rightShiftViLikes() +
+        larks()
 
 private fun rightShiftViLikes(): List<KarabinerRule> =
-    (rightShiftViLikeWithTerminalExtras()
-        + rightShiftViLikeExtrasEditing().rules
-        + rightShiftViLikeExtrasNavigation().rules
-        + rightShiftViLikeExtrasSymbols().rules
-)
+    rightShiftViLikeWithTerminalExtras() +
+        rightShiftViLikeExtrasEditing().rules +
+        rightShiftViLikeExtrasNavigation().rules +
+        rightShiftViLikeExtrasSymbols().rules
 
 private fun rightShiftViLikeWithTerminalExtras(): List<KarabinerRule> =
-    (rightShiftViLikeExtrasTerminal().rules // order is important as has overrides
-        + rightShiftViLike().rules)
+    rightShiftViLikeExtrasTerminal().rules + // order is important as has overrides
+        rightShiftViLike().rules
 
 private fun larks(): List<KarabinerRule> =
-    (larksTerminal().rules
-        + larksMacToPc().rules.filter { it.description == doubleQuote }
-        + larksNavigation().rules
-        + larksNoQuit().rules
-        + larksWrap().rules)
+    larksTerminal().rules +
+        larksMacToPc().rules.filter { it.description == doubleQuote } +
+        larksNavigation().rules +
+        larksNoQuit().rules +
+        larksWrap().rules
 
 private const val doubleQuote = "\" (right_shift + 2)"
 
