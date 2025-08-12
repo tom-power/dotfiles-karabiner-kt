@@ -11,6 +11,7 @@ import se.tp21.larks.karabiner.modifications.larksWrap
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasEditing
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasTerminal
 import se.tp21.sixtypercent.karabiner.modifications.sixtyPercentFunctionKeys
+import se.tp21.sixtypercent.karabiner.modifications.sixtyPercentMacKeys
 import se.tp21.sixtypercent.karabiner.modifications.sixtyPercentNavigation
 import se.tp21.sixtypercent.karabiner.modifications.sixtyPercentSymbols
 import sh.kau.karabiner.KarabinerRule
@@ -39,6 +40,7 @@ private fun larks(): List<KarabinerRule> =
 private const val doubleQuote = "\" (right_shift + 2)"
 
 fun sixtyPercentRules() =
+    sixtyPercentMacKeys().rules +
     sixtyPercentFunctionKeys().rules +
         sixtyPercentNavigation().rules +
         sixtyPercentSymbols().rules
