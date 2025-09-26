@@ -953,7 +953,7 @@
                         ]
                     },
                     {
-                        "description": "Control b (left_command+b to right_control+b)",
+                        "description": "Control b (left_command+b to right_control+w)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -967,7 +967,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "b",
+                                        "key_code": "w",
                                         "modifiers": [
                                             "right_control"
                                         ]
