@@ -1025,6 +1025,30 @@
                         ]
                     },
                     {
+                        "description": "Control k (left_command+k to right_control+k)",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "k",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "k",
+                                        "modifiers": [
+                                            "right_control"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
                         "description": "\" (right_shift + 2)",
                         "manipulators": [
                             {
