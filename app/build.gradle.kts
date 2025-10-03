@@ -27,7 +27,7 @@ dependencies {
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.kotlin.reflect)
     implementation("karabiner-kt:core:0.2")
-    implementation("right-shift-vi-like-karabiner-kt:core:0.2")
+    implementation("right-shift-vi-like-karabiner-kt:core:0.3")
     implementation("larks-karabiner-kt:core:0.3")
     implementation("sixty-percent-karabiner-kt:core:0.3")
     implementation("snippets-karabiner-kt:core:0.1")
