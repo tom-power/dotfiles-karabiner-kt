@@ -23,7 +23,6 @@ fun tp(snippetRules: List<KarabinerRule>): Profile =
                                 listOf(
                                     deviceIdentifierK12(),
                                     deviceIdentifierYoda(),
-
                                 )
                             )
                         + snippetRules

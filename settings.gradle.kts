@@ -16,7 +16,7 @@ rootProject.name = "dotfiles-karabiner-kt"
 include("app")
 //includeBuild("../karabiner-kt")
 //includeBuild("../right-shift-vi-like-karabiner-kt")
-//includeBuild("../larks-karabiner-kt")
+includeBuild("../larks-karabiner-kt")
 //includeBuild("../sixty-percent-karabiner-kt")
 //includeBuild("../snippets-karabiner-kt")
 //includeBuild("../resources-approval")
@@ -27,9 +27,9 @@ sourceControl {
     gitRepository(URI("https://github.com/tom-power/right-shift-vi-like-karabiner-kt")) {
         producesModule("right-shift-vi-like-karabiner-kt:core")
     }
-    gitRepository(URI("https://github.com/tom-power/larks-karabiner-kt")) {
-        producesModule("larks-karabiner-kt:core")
-    }
+//    gitRepository(URI("https://github.com/tom-power/larks-karabiner-kt")) {
+//        producesModule("larks-karabiner-kt:core")
+//    }
     gitRepository(URI("https://github.com/tom-power/sixty-percent-karabiner-kt")) {
         producesModule("sixty-percent-karabiner-kt:core")
     }

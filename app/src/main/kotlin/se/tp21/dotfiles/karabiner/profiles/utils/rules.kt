@@ -1,12 +1,13 @@
 package se.tp21.dotfiles.karabiner.profiles.utils
 
+import se.tp21.larks.karabiner.modifications.larksClicking
+import se.tp21.larks.karabiner.modifications.larksGaming
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLike
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasNavigation
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasSymbols
 import se.tp21.larks.karabiner.modifications.larksTerminal
 import se.tp21.larks.karabiner.modifications.larksMacToPc
 import se.tp21.larks.karabiner.modifications.larksNavigation
-import se.tp21.larks.karabiner.modifications.larksNoQuit
 import se.tp21.larks.karabiner.modifications.larksWrap
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasEditing
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasTerminal
@@ -34,8 +35,9 @@ private fun larks(): List<KarabinerRule> =
     larksTerminal().rules +
         larksMacToPc().rules.filter { it.description == doubleQuote } +
         larksNavigation().rules +
-        larksNoQuit().rules +
-        larksWrap().rules
+        larksClicking().rules +
+        larksWrap().rules +
+        larksGaming().rules
 
 private const val doubleQuote = "\" (right_shift + 2)"
 
