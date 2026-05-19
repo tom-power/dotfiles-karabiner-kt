@@ -40,7 +40,8 @@
                                             "^com\\.jetbrains\\.intellij-EAP$",
                                             "^com\\.googlecode\\.iterm2$",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com\\.jetbrains\\.pycharm$"
+                                            "^com\\.jetbrains\\.pycharm$",
+                                            "^com\\.cmuxterm\\.app$"
                                         ]
                                     }
                                 ]
@@ -80,7 +81,8 @@
                                             "^com\\.jetbrains\\.intellij-EAP$",
                                             "^com\\.googlecode\\.iterm2$",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com\\.jetbrains\\.pycharm$"
+                                            "^com\\.jetbrains\\.pycharm$",
+                                            "^com\\.cmuxterm\\.app$"
                                         ]
                                     }
                                 ]
