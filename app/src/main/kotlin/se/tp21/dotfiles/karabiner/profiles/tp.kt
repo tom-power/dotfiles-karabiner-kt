@@ -1,12 +1,7 @@
 package se.tp21.dotfiles.karabiner.profiles
 
 import se.tp21.dotfiles.karabiner.profiles.devices.*
-import se.tp21.dotfiles.karabiner.profiles.utils.baseRules
-import se.tp21.dotfiles.karabiner.profiles.utils.keyboardAnsi
-import se.tp21.dotfiles.karabiner.profiles.utils.simpleModificationsGlobal
-import se.tp21.dotfiles.karabiner.profiles.utils.sixtyPercentRules
-import se.tp21.dotfiles.karabiner.profiles.utils.withDeviceIfConditionFor
-import se.tp21.larks.karabiner.modifications.larksTerminalSimple
+import se.tp21.dotfiles.karabiner.profiles.utils.*
 import sh.kau.karabiner.ComplexModifications
 import sh.kau.karabiner.KarabinerRule
 import sh.kau.karabiner.Profile
@@ -14,7 +9,7 @@ import sh.kau.karabiner.Profile
 fun tp(snippetRules: List<KarabinerRule>): Profile =
     Profile(
         name = "tp",
-        simpleModifications = simpleModificationsGlobal() + larksTerminalSimple(),
+        simpleModifications = simpleModificationsGlobal(),
         complexModifications =
             ComplexModifications(
                 rules =

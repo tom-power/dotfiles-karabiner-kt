@@ -5,7 +5,6 @@ import sh.kau.karabiner.*
 fun deviceConfigurationYoda() =
     DeviceConfiguration(
         identifiers = deviceIdentifierYoda(),
-        simpleModifications = simpleModificationsYoda(),
     )
 
 fun deviceIdentifierYoda() =

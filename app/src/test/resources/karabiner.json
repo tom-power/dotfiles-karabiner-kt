@@ -1710,7 +1710,7 @@
                                             "any"
                                         ],
                                         "mandatory": [
-                                            "left_control"
+                                            "right_command"
                                         ]
                                     }
                                 },
@@ -1751,7 +1751,7 @@
                                             "any"
                                         ],
                                         "mandatory": [
-                                            "left_control"
+                                            "right_command"
                                         ]
                                     }
                                 },
@@ -1792,7 +1792,7 @@
                                             "any"
                                         ],
                                         "mandatory": [
-                                            "left_control"
+                                            "right_command"
                                         ]
                                     }
                                 },
@@ -1833,7 +1833,7 @@
                                             "any"
                                         ],
                                         "mandatory": [
-                                            "left_control"
+                                            "right_command"
                                         ]
                                     }
                                 },
@@ -1874,7 +1874,7 @@
                                             "any"
                                         ],
                                         "mandatory": [
-                                            "left_control"
+                                            "right_command"
                                         ]
                                     }
                                 },
@@ -1915,7 +1915,7 @@
                                             "any"
                                         ],
                                         "mandatory": [
-                                            "left_control"
+                                            "right_command"
                                         ]
                                     }
                                 },
@@ -1956,7 +1956,7 @@
                                             "any"
                                         ],
                                         "mandatory": [
-                                            "left_control"
+                                            "right_command"
                                         ]
                                     }
                                 },
@@ -1997,7 +1997,7 @@
                                             "any"
                                         ],
                                         "mandatory": [
-                                            "left_control"
+                                            "right_command"
                                         ]
                                     }
                                 },
@@ -2038,7 +2038,7 @@
                                             "any"
                                         ],
                                         "mandatory": [
-                                            "left_control"
+                                            "right_command"
                                         ]
                                     }
                                 },
@@ -2079,7 +2079,7 @@
                                             "any"
                                         ],
                                         "mandatory": [
-                                            "left_control"
+                                            "right_command"
                                         ]
                                     }
                                 },
@@ -2120,7 +2120,7 @@
                                             "any"
                                         ],
                                         "mandatory": [
-                                            "left_control"
+                                            "right_command"
                                         ]
                                     }
                                 },
@@ -2161,7 +2161,7 @@
                                             "any"
                                         ],
                                         "mandatory": [
-                                            "left_control"
+                                            "right_command"
                                         ]
                                     }
                                 },
@@ -6072,16 +6072,6 @@
                             "key_code": "grave_accent_and_tilde"
                         }
                     ]
-                },
-                {
-                    "from": {
-                        "key_code": "right_command"
-                    },
-                    "to": [
-                        {
-                            "key_code": "left_control"
-                        }
-                    ]
                 }
             ],
             "selected": true,
@@ -6167,29 +6157,7 @@
                         "vendor_id": 1241,
                         "product_id": 355,
                         "is_keyboard": true
-                    },
-                    "simple_modifications": [
-                        {
-                            "from": {
-                                "key_code": "left_option"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "left_command"
-                                }
-                            ]
-                        },
-                        {
-                            "from": {
-                                "key_code": "left_command"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "left_option"
-                                }
-                            ]
-                        }
-                    ]
+                    }
                 }
             ]
         }
