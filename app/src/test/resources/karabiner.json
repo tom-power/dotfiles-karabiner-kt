@@ -971,7 +971,7 @@
                                     {
                                         "key_code": "w",
                                         "modifiers": [
-                                            "right_control"
+                                            "left_control"
                                         ]
                                     }
                                 ]
@@ -995,7 +995,7 @@
                                     {
                                         "key_code": "u",
                                         "modifiers": [
-                                            "right_control"
+                                            "left_control"
                                         ]
                                     }
                                 ]
@@ -1019,7 +1019,7 @@
                                     {
                                         "key_code": "l",
                                         "modifiers": [
-                                            "right_control"
+                                            "left_control"
                                         ]
                                     }
                                 ]
@@ -1043,7 +1043,7 @@
                                     {
                                         "key_code": "k",
                                         "modifiers": [
-                                            "right_control"
+                                            "left_control"
                                         ]
                                     }
                                 ]
@@ -1699,128 +1699,7 @@
                         ]
                     },
                     {
-                        "description": "` (right_command + escape)",
-                        "manipulators": [
-                            {
-                                "type": "basic",
-                                "from": {
-                                    "key_code": "escape",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "right_command"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "grave_accent_and_tilde"
-                                    }
-                                ],
-                                "conditions": [
-                                    {
-                                        "type": "device_if",
-                                        "identifiers": [
-                                            {
-                                                "vendor_id": 1452,
-                                                "product_id": 591,
-                                                "is_keyboard": true
-                                            },
-                                            {
-                                                "vendor_id": 1241,
-                                                "product_id": 355,
-                                                "is_keyboard": true
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "description": "command+` (right_command + left_command + escape)",
-                        "manipulators": [
-                            {
-                                "type": "basic",
-                                "from": {
-                                    "key_code": "escape",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "right_command",
-                                            "left_command"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "grave_accent_and_tilde",
-                                        "modifiers": [
-                                            "left_command"
-                                        ]
-                                    }
-                                ],
-                                "conditions": [
-                                    {
-                                        "type": "device_if",
-                                        "identifiers": [
-                                            {
-                                                "vendor_id": 1452,
-                                                "product_id": 591,
-                                                "is_keyboard": true
-                                            },
-                                            {
-                                                "vendor_id": 1241,
-                                                "product_id": 355,
-                                                "is_keyboard": true
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "description": "~ (left_option + escape)",
-                        "manipulators": [
-                            {
-                                "type": "basic",
-                                "from": {
-                                    "key_code": "escape",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_option"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "grave_accent_and_tilde",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ]
-                                    }
-                                ],
-                                "conditions": [
-                                    {
-                                        "type": "device_if",
-                                        "identifiers": [
-                                            {
-                                                "vendor_id": 1452,
-                                                "product_id": 591,
-                                                "is_keyboard": true
-                                            },
-                                            {
-                                                "vendor_id": 1241,
-                                                "product_id": 355,
-                                                "is_keyboard": true
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "description": "f1 (right_command + 1)",
+                        "description": "f1 (right_command+num1)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1831,7 +1710,7 @@
                                             "any"
                                         ],
                                         "mandatory": [
-                                            "right_command"
+                                            "left_control"
                                         ]
                                     }
                                 },
@@ -1861,7 +1740,7 @@
                         ]
                     },
                     {
-                        "description": "f2 (right_command + 2)",
+                        "description": "f2 (right_command+num2)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1872,7 +1751,7 @@
                                             "any"
                                         ],
                                         "mandatory": [
-                                            "right_command"
+                                            "left_control"
                                         ]
                                     }
                                 },
@@ -1902,7 +1781,7 @@
                         ]
                     },
                     {
-                        "description": "f3 (right_command + 3)",
+                        "description": "f3 (right_command+num3)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1913,7 +1792,7 @@
                                             "any"
                                         ],
                                         "mandatory": [
-                                            "right_command"
+                                            "left_control"
                                         ]
                                     }
                                 },
@@ -1943,7 +1822,7 @@
                         ]
                     },
                     {
-                        "description": "f4 (right_command + 4)",
+                        "description": "f4 (right_command+num4)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1954,7 +1833,7 @@
                                             "any"
                                         ],
                                         "mandatory": [
-                                            "right_command"
+                                            "left_control"
                                         ]
                                     }
                                 },
@@ -1984,7 +1863,7 @@
                         ]
                     },
                     {
-                        "description": "f5 (right_command + 5)",
+                        "description": "f5 (right_command+num5)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1995,7 +1874,7 @@
                                             "any"
                                         ],
                                         "mandatory": [
-                                            "right_command"
+                                            "left_control"
                                         ]
                                     }
                                 },
@@ -2025,7 +1904,7 @@
                         ]
                     },
                     {
-                        "description": "f6 (right_command + 6)",
+                        "description": "f6 (right_command+num6)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -2036,7 +1915,7 @@
                                             "any"
                                         ],
                                         "mandatory": [
-                                            "right_command"
+                                            "left_control"
                                         ]
                                     }
                                 },
@@ -2066,7 +1945,7 @@
                         ]
                     },
                     {
-                        "description": "f7 (right_command + 7)",
+                        "description": "f7 (right_command+num7)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -2077,7 +1956,7 @@
                                             "any"
                                         ],
                                         "mandatory": [
-                                            "right_command"
+                                            "left_control"
                                         ]
                                     }
                                 },
@@ -2107,7 +1986,7 @@
                         ]
                     },
                     {
-                        "description": "f8 (right_command + 8)",
+                        "description": "f8 (right_command+num8)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -2118,7 +1997,7 @@
                                             "any"
                                         ],
                                         "mandatory": [
-                                            "right_command"
+                                            "left_control"
                                         ]
                                     }
                                 },
@@ -2148,7 +2027,7 @@
                         ]
                     },
                     {
-                        "description": "f9 (right_command + 9)",
+                        "description": "f9 (right_command+num9)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -2159,7 +2038,7 @@
                                             "any"
                                         ],
                                         "mandatory": [
-                                            "right_command"
+                                            "left_control"
                                         ]
                                     }
                                 },
@@ -2189,7 +2068,7 @@
                         ]
                     },
                     {
-                        "description": "f10 (right_command + 0)",
+                        "description": "f10 (right_command+num0)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -2200,7 +2079,7 @@
                                             "any"
                                         ],
                                         "mandatory": [
-                                            "right_command"
+                                            "left_control"
                                         ]
                                     }
                                 },
@@ -2230,7 +2109,7 @@
                         ]
                     },
                     {
-                        "description": "f11 (right_command + hyphen)",
+                        "description": "f11 (right_command+hyphen)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -2241,7 +2120,7 @@
                                             "any"
                                         ],
                                         "mandatory": [
-                                            "right_command"
+                                            "left_control"
                                         ]
                                     }
                                 },
@@ -2271,7 +2150,7 @@
                         ]
                     },
                     {
-                        "description": "f12 (right_command + equal_sign)",
+                        "description": "f12 (right_command+equalsign)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -2282,7 +2161,7 @@
                                             "any"
                                         ],
                                         "mandatory": [
-                                            "right_command"
+                                            "left_control"
                                         ]
                                     }
                                 },
@@ -2415,6 +2294,127 @@
                                     },
                                     {
                                         "key_code": "slash"
+                                    }
+                                ],
+                                "conditions": [
+                                    {
+                                        "type": "device_if",
+                                        "identifiers": [
+                                            {
+                                                "vendor_id": 1452,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
+                                            {
+                                                "vendor_id": 1241,
+                                                "product_id": 355,
+                                                "is_keyboard": true
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "description": "~ (left_option + escape)",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "escape",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "grave_accent_and_tilde",
+                                        "modifiers": [
+                                            "left_shift"
+                                        ]
+                                    }
+                                ],
+                                "conditions": [
+                                    {
+                                        "type": "device_if",
+                                        "identifiers": [
+                                            {
+                                                "vendor_id": 1452,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
+                                            {
+                                                "vendor_id": 1241,
+                                                "product_id": 355,
+                                                "is_keyboard": true
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "description": "` (right_command + escape)",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "escape",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "grave_accent_and_tilde"
+                                    }
+                                ],
+                                "conditions": [
+                                    {
+                                        "type": "device_if",
+                                        "identifiers": [
+                                            {
+                                                "vendor_id": 1452,
+                                                "product_id": 591,
+                                                "is_keyboard": true
+                                            },
+                                            {
+                                                "vendor_id": 1241,
+                                                "product_id": 355,
+                                                "is_keyboard": true
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "description": "command+` (right_command + left_command + escape)",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "escape",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command",
+                                            "left_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "grave_accent_and_tilde",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
                                     }
                                 ],
                                 "conditions": [
