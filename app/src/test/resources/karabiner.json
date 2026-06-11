@@ -955,7 +955,7 @@
                         ]
                     },
                     {
-                        "description": "Control b (left_command+b to right_control+w)",
+                        "description": "Control w (left_command+b to right_control+w)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -6070,6 +6070,16 @@
                     "to": [
                         {
                             "key_code": "grave_accent_and_tilde"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "right_command"
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_control"
                         }
                     ]
                 }
