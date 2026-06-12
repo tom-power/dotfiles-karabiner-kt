@@ -33,13 +33,11 @@ private fun rightShiftViLikeWithTerminalExtras(): List<KarabinerRule> =
 
 private fun larks(): List<KarabinerRule> =
     larksTerminal().rules +
-        larksMacToPc().rules.filter { it.description == doubleQuote } +
+        larksMacToPc().rules +
         larksNavigation().rules +
         larksClicking().rules +
         larksWrap().rules +
         larksGaming().rules
-
-private const val doubleQuote = "\" (right_shift + 2)"
 
 fun sixtyPercentRules() =
     sixtyPercentMacKeys().rules +
