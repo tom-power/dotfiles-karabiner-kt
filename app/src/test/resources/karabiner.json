@@ -27,21 +27,13 @@
                                     {
                                         "key_code": "left_arrow",
                                         "modifiers": [
-                                            "fn"
+                                            "left_command"
                                         ]
-                                    }
-                                ],
-                                "conditions": [
+                                    },
                                     {
-                                        "type": "frontmost_application_if",
-                                        "bundle_identifiers": [
-                                            "^com\\.jetbrains\\.intellij$",
-                                            "^com\\.jetbrains\\.intellij\\.ce$",
-                                            "^com\\.jetbrains\\.intellij-EAP$",
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.microsoft\\.VSCode$",
-                                            "^com\\.jetbrains\\.pycharm$",
-                                            "^com\\.cmuxterm\\.app$"
+                                        "key_code": "left_arrow",
+                                        "modifiers": [
+                                            "fn"
                                         ]
                                     }
                                 ]
@@ -68,21 +60,13 @@
                                     {
                                         "key_code": "right_arrow",
                                         "modifiers": [
-                                            "fn"
+                                            "left_command"
                                         ]
-                                    }
-                                ],
-                                "conditions": [
+                                    },
                                     {
-                                        "type": "frontmost_application_if",
-                                        "bundle_identifiers": [
-                                            "^com\\.jetbrains\\.intellij$",
-                                            "^com\\.jetbrains\\.intellij\\.ce$",
-                                            "^com\\.jetbrains\\.intellij-EAP$",
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.microsoft\\.VSCode$",
-                                            "^com\\.jetbrains\\.pycharm$",
-                                            "^com\\.cmuxterm\\.app$"
+                                        "key_code": "right_arrow",
+                                        "modifiers": [
+                                            "fn"
                                         ]
                                     }
                                 ]
