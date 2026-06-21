@@ -8,7 +8,42 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Home terminal (right_shift+a to fn+left_arrow)",
+                        "description": "End for apps (right_shift+e to left_command+right)",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "e",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ],
+                                        "mandatory": [
+                                            "right_shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
+                                    }
+                                ],
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_if",
+                                        "bundle_identifiers": [
+                                            "^org\\.mozilla\\.firefox$"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Home for apps (right_shift+a to left_command+left)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -29,7 +64,36 @@
                                         "modifiers": [
                                             "left_command"
                                         ]
-                                    },
+                                    }
+                                ],
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_if",
+                                        "bundle_identifiers": [
+                                            "^org\\.mozilla\\.firefox$"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Home terminal (right_shift+a to fn+left_arrow)",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "a",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ],
+                                        "mandatory": [
+                                            "right_shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
                                     {
                                         "key_code": "left_arrow",
                                         "modifiers": [
@@ -57,12 +121,6 @@
                                     }
                                 },
                                 "to": [
-                                    {
-                                        "key_code": "right_arrow",
-                                        "modifiers": [
-                                            "left_command"
-                                        ]
-                                    },
                                     {
                                         "key_code": "right_arrow",
                                         "modifiers": [
@@ -494,30 +552,6 @@
                         ]
                     },
                     {
-                        "description": "Escape (left_command+space to escape)",
-                        "manipulators": [
-                            {
-                                "type": "basic",
-                                "from": {
-                                    "key_code": "spacebar",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ],
-                                        "mandatory": [
-                                            "left_command"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "escape"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
                         "description": "Return (right_shift+m to return)",
                         "manipulators": [
                             {
@@ -654,30 +688,6 @@
                                         "modifiers": [
                                             "left_command",
                                             "left_shift"
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Spotlight (left_command+return to left_command+spacebar)",
-                        "manipulators": [
-                            {
-                                "type": "basic",
-                                "from": {
-                                    "key_code": "return_or_enter",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_command"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "spacebar",
-                                        "modifiers": [
-                                            "left_command"
                                         ]
                                     }
                                 ]
@@ -933,6 +943,96 @@
                                     },
                                     {
                                         "key_code": "slash"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "description": "left click (q+left_command to left click)",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "q",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "pointing_button": "button1"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "description": "middle click (v+fn to middle click)",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "v",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "pointing_button": "button3"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Escape (left_command+space to escape)",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "spacebar",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ],
+                                        "mandatory": [
+                                            "left_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "escape"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Spotlight (left_command+return to left_command+spacebar)",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "return_or_enter",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "spacebar",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
                                     }
                                 ]
                             }
@@ -1275,6 +1375,66 @@
                         ]
                     },
                     {
+                        "description": "left control (left_command+moonlight to left control)",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "left_command",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_control"
+                                    }
+                                ],
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_if",
+                                        "bundle_identifiers": [
+                                            "^com\\.moonlight\\-stream\\.Moonlight$"
+                                        ],
+                                        "file_paths": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "description": "left click (q+left_control+moonlight to left click)",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "q",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "pointing_button": "button1"
+                                    }
+                                ],
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_if",
+                                        "bundle_identifiers": [
+                                            "^com\\.moonlight\\-stream\\.Moonlight$"
+                                        ],
+                                        "file_paths": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
                         "description": "\" (2 + right_shift)",
                         "manipulators": [
                             {
@@ -1467,48 +1627,6 @@
                         ]
                     },
                     {
-                        "description": "left click (q+left_command to left click)",
-                        "manipulators": [
-                            {
-                                "type": "basic",
-                                "from": {
-                                    "key_code": "q",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_command"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "pointing_button": "button1"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "description": "middle click (v+fn to middle click)",
-                        "manipulators": [
-                            {
-                                "type": "basic",
-                                "from": {
-                                    "key_code": "v",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "fn"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "pointing_button": "button3"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
                         "description": "wrap with \" (left_shift+right_shift+2 to clipboard wrapped with \")",
                         "manipulators": [
                             {
@@ -1644,66 +1762,6 @@
                                     },
                                     {
                                         "key_code": "grave_accent_and_tilde"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "description": "left control (left_command+moonlight to left control)",
-                        "manipulators": [
-                            {
-                                "type": "basic",
-                                "from": {
-                                    "key_code": "left_command",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_control"
-                                    }
-                                ],
-                                "conditions": [
-                                    {
-                                        "type": "frontmost_application_if",
-                                        "bundle_identifiers": [
-                                            "^com\\.moonlight\\-stream\\.Moonlight$"
-                                        ],
-                                        "file_paths": []
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "description": "left click (q+left_control+moonlight to left click)",
-                        "manipulators": [
-                            {
-                                "type": "basic",
-                                "from": {
-                                    "key_code": "q",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "pointing_button": "button1"
-                                    }
-                                ],
-                                "conditions": [
-                                    {
-                                        "type": "frontmost_application_if",
-                                        "bundle_identifiers": [
-                                            "^com\\.moonlight\\-stream\\.Moonlight$"
-                                        ],
-                                        "file_paths": []
                                     }
                                 ]
                             }
