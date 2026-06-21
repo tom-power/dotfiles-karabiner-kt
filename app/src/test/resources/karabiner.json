@@ -943,7 +943,7 @@
                         ]
                     },
                     {
-                        "description": "Escape (left_command+space to escape)",
+                        "description": "Escape (right_command+space to escape)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -954,7 +954,7 @@
                                             "any"
                                         ],
                                         "mandatory": [
-                                            "left_command"
+                                            "right_command"
                                         ]
                                     }
                                 },
@@ -975,7 +975,7 @@
                                     "key_code": "return_or_enter",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_command"
+                                            "right_command"
                                         ]
                                     }
                                 },
@@ -1018,7 +1018,8 @@
                                             "^com\\.jetbrains.*",
                                             "^com\\.microsoft\\.VSCode.*",
                                             "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.cmuxterm\\.app$"
+                                            "^com\\.cmuxterm\\.app$",
+                                            "^dev\\.zed\\.Zed$"
                                         ]
                                     }
                                 ]
@@ -1053,7 +1054,8 @@
                                             "^com\\.jetbrains.*",
                                             "^com\\.microsoft\\.VSCode.*",
                                             "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.cmuxterm\\.app$"
+                                            "^com\\.cmuxterm\\.app$",
+                                            "^dev\\.zed\\.Zed$"
                                         ]
                                     }
                                 ]
@@ -1088,7 +1090,8 @@
                                             "^com\\.jetbrains.*",
                                             "^com\\.microsoft\\.VSCode.*",
                                             "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.cmuxterm\\.app$"
+                                            "^com\\.cmuxterm\\.app$",
+                                            "^dev\\.zed\\.Zed$"
                                         ]
                                     }
                                 ]
@@ -1123,7 +1126,8 @@
                                             "^com\\.jetbrains.*",
                                             "^com\\.microsoft\\.VSCode.*",
                                             "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.cmuxterm\\.app$"
+                                            "^com\\.cmuxterm\\.app$",
+                                            "^dev\\.zed\\.Zed$"
                                         ]
                                     }
                                 ]
@@ -1131,21 +1135,21 @@
                         ]
                     },
                     {
-                        "description": "q + left_control (q + left_command)",
+                        "description": "w + left_control (b + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
                                 "from": {
-                                    "key_code": "q",
+                                    "key_code": "b",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_command"
+                                            "right_command"
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "q",
+                                        "key_code": "w",
                                         "modifiers": [
                                             "left_control"
                                         ]
@@ -1158,7 +1162,8 @@
                                             "^com\\.jetbrains.*",
                                             "^com\\.microsoft\\.VSCode.*",
                                             "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.cmuxterm\\.app$"
+                                            "^com\\.cmuxterm\\.app$",
+                                            "^dev\\.zed\\.Zed$"
                                         ]
                                     }
                                 ]
@@ -1166,21 +1171,21 @@
                         ]
                     },
                     {
-                        "description": "a + left_control (a + left_command)",
+                        "description": "u + left_control (u + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
                                 "from": {
-                                    "key_code": "a",
+                                    "key_code": "u",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_command"
+                                            "right_command"
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "a",
+                                        "key_code": "u",
                                         "modifiers": [
                                             "left_control"
                                         ]
@@ -1193,7 +1198,8 @@
                                             "^com\\.jetbrains.*",
                                             "^com\\.microsoft\\.VSCode.*",
                                             "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.cmuxterm\\.app$"
+                                            "^com\\.cmuxterm\\.app$",
+                                            "^dev\\.zed\\.Zed$"
                                         ]
                                     }
                                 ]
@@ -1201,21 +1207,21 @@
                         ]
                     },
                     {
-                        "description": "s + left_control (s + left_command)",
+                        "description": "l + left_control (l + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
                                 "from": {
-                                    "key_code": "s",
+                                    "key_code": "l",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_command"
+                                            "right_command"
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "s",
+                                        "key_code": "l",
                                         "modifiers": [
                                             "left_control"
                                         ]
@@ -1228,7 +1234,8 @@
                                             "^com\\.jetbrains.*",
                                             "^com\\.microsoft\\.VSCode.*",
                                             "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.cmuxterm\\.app$"
+                                            "^com\\.cmuxterm\\.app$",
+                                            "^dev\\.zed\\.Zed$"
                                         ]
                                     }
                                 ]
@@ -1236,21 +1243,21 @@
                         ]
                     },
                     {
-                        "description": "d + left_control (d + left_command)",
+                        "description": "k + left_control (k + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
                                 "from": {
-                                    "key_code": "d",
+                                    "key_code": "k",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_command"
+                                            "right_command"
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d",
+                                        "key_code": "k",
                                         "modifiers": [
                                             "left_control"
                                         ]
@@ -1263,7 +1270,8 @@
                                             "^com\\.jetbrains.*",
                                             "^com\\.microsoft\\.VSCode.*",
                                             "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.cmuxterm\\.app$"
+                                            "^com\\.cmuxterm\\.app$",
+                                            "^dev\\.zed\\.Zed$"
                                         ]
                                     }
                                 ]
@@ -1271,21 +1279,21 @@
                         ]
                     },
                     {
-                        "description": "z + left_control (z + left_command)",
+                        "description": "o + left_control (o + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
                                 "from": {
-                                    "key_code": "z",
+                                    "key_code": "o",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_command"
+                                            "right_command"
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "z",
+                                        "key_code": "o",
                                         "modifiers": [
                                             "left_control"
                                         ]
@@ -1298,7 +1306,8 @@
                                             "^com\\.jetbrains.*",
                                             "^com\\.microsoft\\.VSCode.*",
                                             "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.cmuxterm\\.app$"
+                                            "^com\\.cmuxterm\\.app$",
+                                            "^dev\\.zed\\.Zed$"
                                         ]
                                     }
                                 ]
@@ -1306,21 +1315,21 @@
                         ]
                     },
                     {
-                        "description": "x + left_control (x + left_command)",
+                        "description": "p + left_control (p + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
                                 "from": {
-                                    "key_code": "x",
+                                    "key_code": "p",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_command"
+                                            "right_command"
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "x",
+                                        "key_code": "p",
                                         "modifiers": [
                                             "left_control"
                                         ]
@@ -1333,112 +1342,8 @@
                                             "^com\\.jetbrains.*",
                                             "^com\\.microsoft\\.VSCode.*",
                                             "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.cmuxterm\\.app$"
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "description": "c + left_control (c + left_command)",
-                        "manipulators": [
-                            {
-                                "type": "basic",
-                                "from": {
-                                    "key_code": "c",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_command"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "c",
-                                        "modifiers": [
-                                            "left_control"
-                                        ]
-                                    }
-                                ],
-                                "conditions": [
-                                    {
-                                        "type": "frontmost_application_if",
-                                        "bundle_identifiers": [
-                                            "^com\\.jetbrains.*",
-                                            "^com\\.microsoft\\.VSCode.*",
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.cmuxterm\\.app$"
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "description": "v + left_control (v + left_command)",
-                        "manipulators": [
-                            {
-                                "type": "basic",
-                                "from": {
-                                    "key_code": "v",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_command"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "v",
-                                        "modifiers": [
-                                            "left_control"
-                                        ]
-                                    }
-                                ],
-                                "conditions": [
-                                    {
-                                        "type": "frontmost_application_if",
-                                        "bundle_identifiers": [
-                                            "^com\\.jetbrains.*",
-                                            "^com\\.microsoft\\.VSCode.*",
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.cmuxterm\\.app$"
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "description": "slash + left_control (slash + left_command)",
-                        "manipulators": [
-                            {
-                                "type": "basic",
-                                "from": {
-                                    "key_code": "slash",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_command"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "slash",
-                                        "modifiers": [
-                                            "left_control"
-                                        ]
-                                    }
-                                ],
-                                "conditions": [
-                                    {
-                                        "type": "frontmost_application_if",
-                                        "bundle_identifiers": [
-                                            "^com\\.jetbrains.*",
-                                            "^com\\.microsoft\\.VSCode.*",
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.cmuxterm\\.app$"
+                                            "^com\\.cmuxterm\\.app$",
+                                            "^dev\\.zed\\.Zed$"
                                         ]
                                     }
                                 ]
@@ -1473,7 +1378,8 @@
                                             "^com\\.jetbrains.*",
                                             "^com\\.microsoft\\.VSCode.*",
                                             "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.cmuxterm\\.app$"
+                                            "^com\\.cmuxterm\\.app$",
+                                            "^dev\\.zed\\.Zed$"
                                         ]
                                     }
                                 ]
@@ -1508,7 +1414,8 @@
                                             "^com\\.jetbrains.*",
                                             "^com\\.microsoft\\.VSCode.*",
                                             "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.cmuxterm\\.app$"
+                                            "^com\\.cmuxterm\\.app$",
+                                            "^dev\\.zed\\.Zed$"
                                         ]
                                     }
                                 ]
@@ -1543,7 +1450,8 @@
                                             "^com\\.jetbrains.*",
                                             "^com\\.microsoft\\.VSCode.*",
                                             "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.cmuxterm\\.app$"
+                                            "^com\\.cmuxterm\\.app$",
+                                            "^dev\\.zed\\.Zed$"
                                         ]
                                     }
                                 ]
@@ -1578,7 +1486,8 @@
                                             "^com\\.jetbrains.*",
                                             "^com\\.microsoft\\.VSCode.*",
                                             "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.cmuxterm\\.app$"
+                                            "^com\\.cmuxterm\\.app$",
+                                            "^dev\\.zed\\.Zed$"
                                         ]
                                     }
                                 ]
@@ -1613,7 +1522,8 @@
                                             "^com\\.jetbrains.*",
                                             "^com\\.microsoft\\.VSCode.*",
                                             "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.cmuxterm\\.app$"
+                                            "^com\\.cmuxterm\\.app$",
+                                            "^dev\\.zed\\.Zed$"
                                         ]
                                     }
                                 ]
@@ -1648,7 +1558,8 @@
                                             "^com\\.jetbrains.*",
                                             "^com\\.microsoft\\.VSCode.*",
                                             "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.cmuxterm\\.app$"
+                                            "^com\\.cmuxterm\\.app$",
+                                            "^dev\\.zed\\.Zed$"
                                         ]
                                     }
                                 ]
@@ -1683,7 +1594,8 @@
                                             "^com\\.jetbrains.*",
                                             "^com\\.microsoft\\.VSCode.*",
                                             "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.cmuxterm\\.app$"
+                                            "^com\\.cmuxterm\\.app$",
+                                            "^dev\\.zed\\.Zed$"
                                         ]
                                     }
                                 ]
@@ -1718,7 +1630,8 @@
                                             "^com\\.jetbrains.*",
                                             "^com\\.microsoft\\.VSCode.*",
                                             "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.cmuxterm\\.app$"
+                                            "^com\\.cmuxterm\\.app$",
+                                            "^dev\\.zed\\.Zed$"
                                         ]
                                     }
                                 ]
@@ -1753,7 +1666,8 @@
                                             "^com\\.jetbrains.*",
                                             "^com\\.microsoft\\.VSCode.*",
                                             "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.cmuxterm\\.app$"
+                                            "^com\\.cmuxterm\\.app$",
+                                            "^dev\\.zed\\.Zed$"
                                         ]
                                     }
                                 ]
@@ -6787,7 +6701,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "left_command"
+                            "key_code": "right_command"
                         }
                     ]
                 },
