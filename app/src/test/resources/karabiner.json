@@ -692,6 +692,30 @@
                         ]
                     },
                     {
+                        "description": "Double quote (right_shift+2 to double quote)",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "2",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "quote",
+                                        "modifiers": [
+                                            "left_shift"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
                         "description": "Rename (right_shift+r to shift+f6)",
                         "manipulators": [
                             {
@@ -901,7 +925,7 @@
                         ]
                     },
                     {
-                        "description": "left click (q+left_command to left click)",
+                        "description": "left click (q+right_command to left click)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -909,7 +933,7 @@
                                     "key_code": "q",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_command"
+                                            "right_command"
                                         ]
                                     }
                                 },
@@ -1675,12 +1699,12 @@
                         ]
                     },
                     {
-                        "description": "left control (left_command+moonlight to left control)",
+                        "description": "left control (right_command+moonlight to left control)",
                         "manipulators": [
                             {
                                 "type": "basic",
                                 "from": {
-                                    "key_code": "left_command",
+                                    "key_code": "right_command",
                                     "modifiers": {
                                         "optional": [
                                             "any"
@@ -1735,36 +1759,7 @@
                         ]
                     },
                     {
-                        "description": "\" (2 + right_shift)",
-                        "manipulators": [
-                            {
-                                "type": "basic",
-                                "from": {
-                                    "key_code": "2",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "right_shift"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "quote",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ]
-                                    }
-                                ],
-                                "conditions": [
-                                    {
-                                        "type": "frontmost_application_if"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "description": "page_up + null (delete_or_backspace + left_control)",
+                        "description": "page_up (delete_or_backspace + left_control)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1780,17 +1775,12 @@
                                     {
                                         "key_code": "page_up"
                                     }
-                                ],
-                                "conditions": [
-                                    {
-                                        "type": "frontmost_application_if"
-                                    }
                                 ]
                             }
                         ]
                     },
                     {
-                        "description": "page_up + null (delete_or_backspace + fn)",
+                        "description": "page_up (delete_or_backspace + fn)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1806,17 +1796,12 @@
                                     {
                                         "key_code": "page_up"
                                     }
-                                ],
-                                "conditions": [
-                                    {
-                                        "type": "frontmost_application_if"
-                                    }
                                 ]
                             }
                         ]
                     },
                     {
-                        "description": "page_up + null (up_arrow + left_control)",
+                        "description": "page_up (up_arrow + left_control)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1832,17 +1817,12 @@
                                     {
                                         "key_code": "page_up"
                                     }
-                                ],
-                                "conditions": [
-                                    {
-                                        "type": "frontmost_application_if"
-                                    }
                                 ]
                             }
                         ]
                     },
                     {
-                        "description": "page_up + null (up_arrow + fn)",
+                        "description": "page_up (up_arrow + fn)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1858,17 +1838,12 @@
                                     {
                                         "key_code": "page_up"
                                     }
-                                ],
-                                "conditions": [
-                                    {
-                                        "type": "frontmost_application_if"
-                                    }
                                 ]
                             }
                         ]
                     },
                     {
-                        "description": "page_down + null (return_or_enter + left_control)",
+                        "description": "page_down (return_or_enter + left_control)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1884,17 +1859,12 @@
                                     {
                                         "key_code": "page_down"
                                     }
-                                ],
-                                "conditions": [
-                                    {
-                                        "type": "frontmost_application_if"
-                                    }
                                 ]
                             }
                         ]
                     },
                     {
-                        "description": "page_down + null (return_or_enter + fn)",
+                        "description": "page_down (return_or_enter + fn)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1910,17 +1880,12 @@
                                     {
                                         "key_code": "page_down"
                                     }
-                                ],
-                                "conditions": [
-                                    {
-                                        "type": "frontmost_application_if"
-                                    }
                                 ]
                             }
                         ]
                     },
                     {
-                        "description": "page_down + null (down_arrow + left_control)",
+                        "description": "page_down (down_arrow + left_control)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1936,17 +1901,12 @@
                                     {
                                         "key_code": "page_down"
                                     }
-                                ],
-                                "conditions": [
-                                    {
-                                        "type": "frontmost_application_if"
-                                    }
                                 ]
                             }
                         ]
                     },
                     {
-                        "description": "page_down + null (down_arrow + fn)",
+                        "description": "page_down (down_arrow + fn)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1961,11 +1921,6 @@
                                 "to": [
                                     {
                                         "key_code": "page_down"
-                                    }
-                                ],
-                                "conditions": [
-                                    {
-                                        "type": "frontmost_application_if"
                                     }
                                 ]
                             }

@@ -8,7 +8,6 @@ import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLike
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasNavigation
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasSymbols
 import se.tp21.larks.karabiner.modifications.larksCommandControlTerminal
-import se.tp21.larks.karabiner.modifications.larksMacToPc
 import se.tp21.larks.karabiner.modifications.larksNavigation
 import se.tp21.larks.karabiner.modifications.larksWrap
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasEditing
@@ -29,15 +28,14 @@ private fun rightShiftViLikes(): List<KarabinerRule> =
         rightShiftViLikeExtrasSymbols().rules
 
 private fun rightShiftViLikeWithTerminalExtras(): List<KarabinerRule> =
-    rightShiftViLikeExtrasTerminal().rules + // order is important as has overrides
+    rightShiftViLikeExtrasTerminal().rules +
         rightShiftViLike().rules
 
 private fun larks(): List<KarabinerRule> =
-    larksClicking().rules +
+    larksClicking().rules + // to override com
         larksCommand().rules +
         larksCommandControlTerminal().rules +
         larksGaming().rules +
-        larksMacToPc().rules +
         larksNavigation().rules +
         larksWrap().rules
 
