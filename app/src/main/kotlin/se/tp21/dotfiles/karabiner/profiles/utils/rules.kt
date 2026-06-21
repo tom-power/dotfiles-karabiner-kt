@@ -1,17 +1,17 @@
 package se.tp21.dotfiles.karabiner.profiles.utils
 
+import rightShiftViLikeExtrasTerminal
 import se.tp21.larks.karabiner.modifications.larksClicking
 import se.tp21.larks.karabiner.modifications.larksCommand
 import se.tp21.larks.karabiner.modifications.larksGaming
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLike
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasNavigation
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasSymbols
-import se.tp21.larks.karabiner.modifications.larksCommandControl
+import se.tp21.larks.karabiner.modifications.larksCommandControlTerminal
 import se.tp21.larks.karabiner.modifications.larksMacToPc
 import se.tp21.larks.karabiner.modifications.larksNavigation
 import se.tp21.larks.karabiner.modifications.larksWrap
 import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasEditing
-import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasTerminal
 import se.tp21.sixtypercent.karabiner.modifications.sixtyPercentFunctionKeys
 import se.tp21.sixtypercent.karabiner.modifications.sixtyPercentMacKeys
 import se.tp21.sixtypercent.karabiner.modifications.sixtyPercentNavigation
@@ -35,7 +35,7 @@ private fun rightShiftViLikeWithTerminalExtras(): List<KarabinerRule> =
 private fun larks(): List<KarabinerRule> =
     larksClicking().rules +
         larksCommand().rules +
-        larksCommandControl().rules +
+        larksCommandControlTerminal().rules +
         larksGaming().rules +
         larksMacToPc().rules +
         larksNavigation().rules +
