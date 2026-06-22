@@ -1,6 +1,6 @@
 package se.tp21.dotfiles.karabiner.profiles.utils
 
-import rightShiftViLikeExtrasTerminal
+import se.tp21.rightshiftvilike.karabiner.modifications.rightShiftViLikeExtrasTerminal
 import se.tp21.larks.karabiner.modifications.larksClicking
 import se.tp21.larks.karabiner.modifications.larksCommand
 import se.tp21.larks.karabiner.modifications.larksGaming
