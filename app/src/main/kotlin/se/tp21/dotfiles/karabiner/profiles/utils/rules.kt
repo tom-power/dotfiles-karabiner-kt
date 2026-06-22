@@ -32,7 +32,7 @@ private fun rightShiftViLikeWithTerminalExtras(): List<KarabinerRule> =
         rightShiftViLike().rules
 
 private fun larks(): List<KarabinerRule> =
-    larksClicking().rules + // to override com
+    larksClicking().rules +
         larksCommand().rules +
         larksCommandControlTerminal().rules +
         larksGaming().rules +
