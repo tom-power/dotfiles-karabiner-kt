@@ -12,7 +12,7 @@ fun simpleModificationsGlobal(): List<SimpleModification> =
             to =
                 listOf(
                     SimpleModificationValue(
-                        keyCode = ModifierKeyCode.RightCommand,
+                        keyCode = ModifierKeyCode.LeftCommand,
                     )
                 )
         ),
