@@ -352,7 +352,7 @@
                                     {
                                         "key_code": "c",
                                         "modifiers": [
-                                            "right_command"
+                                            "left_command"
                                         ]
                                     }
                                 ]
@@ -376,7 +376,7 @@
                                     {
                                         "key_code": "x",
                                         "modifiers": [
-                                            "right_command"
+                                            "left_command"
                                         ]
                                     }
                                 ]
@@ -400,7 +400,7 @@
                                     {
                                         "key_code": "v",
                                         "modifiers": [
-                                            "right_command"
+                                            "left_command"
                                         ]
                                     }
                                 ]
@@ -424,7 +424,7 @@
                                     {
                                         "key_code": "z",
                                         "modifiers": [
-                                            "right_command"
+                                            "left_command"
                                         ]
                                     }
                                 ]
@@ -448,7 +448,7 @@
                                     {
                                         "key_code": "s",
                                         "modifiers": [
-                                            "right_command"
+                                            "left_command"
                                         ]
                                     }
                                 ]
@@ -472,7 +472,7 @@
                                     {
                                         "key_code": "t",
                                         "modifiers": [
-                                            "right_command"
+                                            "left_command"
                                         ]
                                     }
                                 ]
@@ -496,7 +496,7 @@
                                     {
                                         "key_code": "w",
                                         "modifiers": [
-                                            "right_command"
+                                            "left_command"
                                         ]
                                     }
                                 ]
@@ -663,7 +663,7 @@
                                     {
                                         "key_code": "l",
                                         "modifiers": [
-                                            "right_command"
+                                            "left_command"
                                         ]
                                     }
                                 ]
@@ -1087,12 +1087,12 @@
                         ]
                     },
                     {
-                        "description": " (l + left_command)",
+                        "description": " (k + left_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
                                 "from": {
-                                    "key_code": "l",
+                                    "key_code": "k",
                                     "modifiers": {
                                         "mandatory": [
                                             "left_command"
@@ -1101,7 +1101,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "l",
+                                        "key_code": "k",
                                         "modifiers": [
                                             "left_control"
                                         ]
@@ -1123,12 +1123,12 @@
                         ]
                     },
                     {
-                        "description": " (k + left_command)",
+                        "description": " (l + left_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
                                 "from": {
-                                    "key_code": "k",
+                                    "key_code": "l",
                                     "modifiers": {
                                         "mandatory": [
                                             "left_command"
@@ -1137,7 +1137,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "k",
+                                        "key_code": "l",
                                         "modifiers": [
                                             "left_control"
                                         ]
@@ -1663,12 +1663,12 @@
                         ]
                     },
                     {
-                        "description": "left control (right_command+moonlight to left control)",
+                        "description": "left control (left_command+moonlight to left control)",
                         "manipulators": [
                             {
                                 "type": "basic",
                                 "from": {
-                                    "key_code": "right_command",
+                                    "key_code": "left_command",
                                     "modifiers": {
                                         "optional": [
                                             "any"
