@@ -44,7 +44,7 @@ private fun simpleModificationsShura() =
         SimpleModification(
             from =
                 SimpleModificationKey(
-                    keyCode = ModifierKeyCode.LeftOption,
+                    keyCode = ModifierKeyCode.RightOption,
                 ),
             to =
                 listOf(
