@@ -8,11 +8,12 @@ fun deviceConfigurationShura() =
         simpleModifications = simpleModificationsShura(),
     )
 
-private fun deviceIdentifierShura(): DeviceIdentifier = DeviceIdentifier(
-    isKeyboard = true,
-    vendorId = 6127,
-    productId = 24647,
-)
+private fun deviceIdentifierShura(): DeviceIdentifier =
+    DeviceIdentifier(
+        isKeyboard = true,
+        vendorId = 6127,
+        productId = 24647,
+    )
 
 private fun simpleModificationsShura() =
     listOf(
@@ -37,6 +38,18 @@ private fun simpleModificationsShura() =
                 listOf(
                     SimpleModificationValue(
                         keyCode = ModifierKeyCode.LeftOption,
+                    )
+                )
+        ),
+        SimpleModification(
+            from =
+                SimpleModificationKey(
+                    keyCode = ModifierKeyCode.LeftOption,
+                ),
+            to =
+                listOf(
+                    SimpleModificationValue(
+                        keyCode = ModifierKeyCode.RightCommand,
                     )
                 )
         )
