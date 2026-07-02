@@ -2,6 +2,7 @@ package se.tp21.dotfiles.karabiner.profiles
 
 import se.tp21.dotfiles.karabiner.profiles.devices.*
 import se.tp21.dotfiles.karabiner.profiles.utils.*
+import se.tp21.sixtypercent.karabiner.modifications.sixtyPercentMacKeys
 import sh.kau.karabiner.ComplexModifications
 import sh.kau.karabiner.KarabinerRule
 import sh.kau.karabiner.Profile
