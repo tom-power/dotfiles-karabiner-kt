@@ -5,6 +5,7 @@ import sh.kau.karabiner.*
 fun deviceConfigurationYoda() =
     DeviceConfiguration(
         identifiers = deviceIdentifierYoda(),
+//        simpleModifications = simpleModificationsYoda(),
     )
 
 fun deviceIdentifierYoda() =
@@ -14,30 +15,33 @@ fun deviceIdentifierYoda() =
         productId = 355,
     )
 
-private fun simpleModificationsYoda() =
-    listOf(
-        SimpleModification(
-            from =
-                SimpleModificationKey(
-                    keyCode = ModifierKeyCode.LeftOption,
-                ),
-            to =
-                listOf(
-                    SimpleModificationValue(
-                        keyCode = ModifierKeyCode.LeftCommand,
-                    )
-                )
-        ),
-        SimpleModification(
-            from =
-                SimpleModificationKey(
-                    keyCode = ModifierKeyCode.LeftCommand,
-                ),
-            to =
-                listOf(
-                    SimpleModificationValue(
-                        keyCode = ModifierKeyCode.LeftOption,
-                    )
-                )
-        )
-    )
+/**
+ * now done with https://github.com/tom-power/tex_yoda_2_configurator_runner
+ */
+//private fun simpleModificationsYoda() =
+//    listOf(
+//        SimpleModification(
+//            from =
+//                SimpleModificationKey(
+//                    keyCode = ModifierKeyCode.LeftOption,
+//                ),
+//            to =
+//                listOf(
+//                    SimpleModificationValue(
+//                        keyCode = ModifierKeyCode.LeftCommand,
+//                    )
+//                )
+//        ),
+//        SimpleModification(
+//            from =
+//                SimpleModificationKey(
+//                    keyCode = ModifierKeyCode.LeftCommand,
+//                ),
+//            to =
+//                listOf(
+//                    SimpleModificationValue(
+//                        keyCode = ModifierKeyCode.LeftOption,
+//                    )
+//                )
+//        )
+//    )
