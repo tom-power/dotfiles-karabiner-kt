@@ -7,10 +7,11 @@ import java.io.File
 fun main() {
     try {
         val snippetRules = snippetModifications("src/main/resources/snippetRules.json").rules
-        val karabinerJson = karabinerConfig(snippetRules).let { json().encodeToString(it) }
-        File("build/karabiner.json").let {
-            it.writeText(karabinerJson)
-            println("Successfully wrote json to ${it.absolutePath}")
+        val karabinerJson = json().encodeToString(karabinerConfig(snippetRules))
+        val karabinerFile = File("build/karabiner.json")
+        with(karabinerFile) {
+            writeText(karabinerJson)
+            println("Successfully wrote json to $absolutePath")
         }
     } catch (e: Exception) {
         System.err.println("Error writing json: ${e.message}")
