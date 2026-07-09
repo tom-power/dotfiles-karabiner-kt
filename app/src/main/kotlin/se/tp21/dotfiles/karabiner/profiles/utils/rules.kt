@@ -26,7 +26,7 @@ private fun larks(): List<KarabinerRule> =
         larksCommand().rules +
         larksCommandControlTerminal().rules +
         larksGaming().rules +
-        larksMacKeys().rules +
+        larksMacSystemKeys().rules +
         larksNavigation().rules +
         larksWrap().rules
 
