@@ -1015,7 +1015,7 @@
                         ]
                     },
                     {
-                        "description": " (b + left_command)",
+                        "description": "w + left_control (b + left_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1051,7 +1051,7 @@
                         ]
                     },
                     {
-                        "description": " (u + left_command)",
+                        "description": "u + left_control (u + left_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1087,7 +1087,7 @@
                         ]
                     },
                     {
-                        "description": " (k + left_command)",
+                        "description": "k + left_control (k + left_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1123,7 +1123,7 @@
                         ]
                     },
                     {
-                        "description": " (l + left_command)",
+                        "description": "l + left_control (l + left_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1159,7 +1159,7 @@
                         ]
                     },
                     {
-                        "description": " (slash + left_command)",
+                        "description": "backslash + left_control (slash + left_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1195,7 +1195,7 @@
                         ]
                     },
                     {
-                        "description": " (a + left_command)",
+                        "description": "a + left_control (a + left_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1231,7 +1231,7 @@
                         ]
                     },
                     {
-                        "description": " (s + left_command)",
+                        "description": "s + left_control (s + left_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1267,7 +1267,7 @@
                         ]
                     },
                     {
-                        "description": " (d + left_command)",
+                        "description": "d + left_control (d + left_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1303,7 +1303,7 @@
                         ]
                     },
                     {
-                        "description": " (z + left_command)",
+                        "description": "z + left_control (z + left_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1339,7 +1339,7 @@
                         ]
                     },
                     {
-                        "description": " (a + right_command)",
+                        "description": "a + left_control (a + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1363,7 +1363,7 @@
                         ]
                     },
                     {
-                        "description": " (b + right_command)",
+                        "description": "b + left_control (b + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1387,7 +1387,7 @@
                         ]
                     },
                     {
-                        "description": " (c + right_command)",
+                        "description": "c + left_control (c + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1411,7 +1411,7 @@
                         ]
                     },
                     {
-                        "description": " (d + right_command)",
+                        "description": "d + left_control (d + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1435,7 +1435,7 @@
                         ]
                     },
                     {
-                        "description": " (e + right_command)",
+                        "description": "e + left_control (e + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1459,7 +1459,7 @@
                         ]
                     },
                     {
-                        "description": " (f + right_command)",
+                        "description": "f + left_control (f + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1483,7 +1483,7 @@
                         ]
                     },
                     {
-                        "description": " (g + right_command)",
+                        "description": "g + left_control (g + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1507,7 +1507,7 @@
                         ]
                     },
                     {
-                        "description": " (h + right_command)",
+                        "description": "h + left_control (h + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1531,7 +1531,7 @@
                         ]
                     },
                     {
-                        "description": " (i + right_command)",
+                        "description": "i + left_control (i + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1555,7 +1555,7 @@
                         ]
                     },
                     {
-                        "description": " (j + right_command)",
+                        "description": "j + left_control (j + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1579,7 +1579,7 @@
                         ]
                     },
                     {
-                        "description": " (k + right_command)",
+                        "description": "k + left_control (k + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1603,7 +1603,7 @@
                         ]
                     },
                     {
-                        "description": " (l + right_command)",
+                        "description": "l + left_control (l + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1627,7 +1627,7 @@
                         ]
                     },
                     {
-                        "description": " (m + right_command)",
+                        "description": "m + left_control (m + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1651,7 +1651,7 @@
                         ]
                     },
                     {
-                        "description": " (n + right_command)",
+                        "description": "n + left_control (n + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1675,7 +1675,7 @@
                         ]
                     },
                     {
-                        "description": " (o + right_command)",
+                        "description": "o + left_control (o + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1699,7 +1699,7 @@
                         ]
                     },
                     {
-                        "description": " (p + right_command)",
+                        "description": "p + left_control (p + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1723,7 +1723,7 @@
                         ]
                     },
                     {
-                        "description": " (q + right_command)",
+                        "description": "q + left_control (q + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1747,7 +1747,7 @@
                         ]
                     },
                     {
-                        "description": " (r + right_command)",
+                        "description": "r + left_control (r + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1771,7 +1771,7 @@
                         ]
                     },
                     {
-                        "description": " (s + right_command)",
+                        "description": "s + left_control (s + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1795,7 +1795,7 @@
                         ]
                     },
                     {
-                        "description": " (t + right_command)",
+                        "description": "t + left_control (t + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1819,7 +1819,7 @@
                         ]
                     },
                     {
-                        "description": " (u + right_command)",
+                        "description": "u + left_control (u + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1843,7 +1843,7 @@
                         ]
                     },
                     {
-                        "description": " (v + right_command)",
+                        "description": "v + left_control (v + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1867,7 +1867,7 @@
                         ]
                     },
                     {
-                        "description": " (w + right_command)",
+                        "description": "w + left_control (w + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1891,7 +1891,7 @@
                         ]
                     },
                     {
-                        "description": " (x + right_command)",
+                        "description": "x + left_control (x + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1915,7 +1915,7 @@
                         ]
                     },
                     {
-                        "description": " (y + right_command)",
+                        "description": "y + left_control (y + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -1939,7 +1939,7 @@
                         ]
                     },
                     {
-                        "description": " (z + right_command)",
+                        "description": "z + left_control (z + right_command)",
                         "manipulators": [
                             {
                                 "type": "basic",
